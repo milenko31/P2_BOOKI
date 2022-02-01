@@ -427,26 +427,28 @@ button{
     
 }
 
-
+/*LES PLUS POPULAIRES*/
 .popular-fix img{
 width:8.5rem;
 height: 7.5rem;
 
 }
 
+
+/*AFFICHAGE EN COLONNE HAUT VERS LE BAS*/
 .popular-fix-a{
 
     display:flex;
     flex-direction: column;
 }
 
-
+/*ARRIERE PLAN GRIS ARRONDI*/
 .popular-flex {
     
     border-radius: 1rem;
    
 }
-
+/*LES 3 ARTICLES A DROITE*/
 .popular-flex article{
     
     border: 1px solid white;
@@ -460,7 +462,7 @@ height: 7.5rem;
 
 }
 
-
+/*ARRIERE PLAN DU CARRE*/
 .popular-flex {
     
     background-color: #f2f2f2; 
@@ -468,6 +470,7 @@ height: 7.5rem;
     display: flex;
 
 }
+
 
 /*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/  
 
