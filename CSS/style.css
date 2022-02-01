@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url("footer.css" )
 /*toujours mettre en haut*/
 /* j'importe ma selection de police de google font en suivant la fiche synthèse*/
 * {/* l'étoile permet de tout séléctionné on parle de WILDCARD*/
@@ -353,7 +353,7 @@ button{
 
 .apartments-list .popular-flex div{
     
-   
+    border: 1px solid blue;
     display: flex;
 
 }
@@ -428,23 +428,15 @@ button{
 }
 
 
-.popular-fix img{
-width:8.5rem;
-height: 7.5rem;
-
-}
-
-.popular-fix-a{
-
-    display:flex;
-    flex-direction: column;
-}
 
 
-.popular-flex {
+
+.popular-flex img{
     
-    border-radius: 1rem;
-   
+    border-radius: 1rem 1rem 0 0;
+    width: 7rem;
+    height: 7rem;
+
 }
 
 .popular-flex article{
@@ -460,7 +452,6 @@ height: 7.5rem;
 
 }
 
-
 .popular-flex {
     
     background-color: #f2f2f2; 
@@ -471,81 +462,29 @@ height: 7.5rem;
 
 /*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/  
 
+.activity-marseille{
+    gap: 3rem;
+    max-height:2000px;
+    max-width:2000px;
+    display: flex;
+    background-color: white;    
+}
 
-h2{
-    
-    margin-left: 1rem;
+
+.activity-marseille .third {
+    flex-basis: auto;
 }
 
 .activity-marseille h4{
 
     font-weight: bold;
-   
-}
-
-.activity-marseille{
-    
-    margin-left: 1rem;
-    gap: 2.5rem;
-    background-color: white; 
-   display: flex;/*pour que les images s'alignent correct*/
-   height: 650px;
-   width: 100%;
 }
 
 
-.first {
-  
-    box-shadow: 0 0 1rem #0000002e;
-    background-color: white;  
-    width: 100%;
-    height:650px;
-    
-    
-   
-}
-.first img{
-    width:100%;
-    height: 90%;
-}
-
-.second-part-a{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    gap: 3rem;
-  
-   height:100%;
-    width: 100%;
-    
-    
-}
-.second-part-a section{
-    height:50%;/*hauteur 50%*/
-    width:100%;/*toute la largeur*/
-}
-.second-a{
-    
-    box-shadow: #0000002e;
-   
-}
-.second-a img{
-    width:100%;
-    height:80%;
-}
-.second-b img{
-    width:100%;
-    height:80%; 
-}
-.second-b{
-
-    height:100%;
-    width:100%;
-}
 .activity-marseille div{
-   
-
-    
+    display: ;
+    box-shadow: 0 0 1rem #0000002e;
+    border-radius: 1rem;
     align-content: space-between;
     display: flex;
 }
@@ -553,7 +492,6 @@ h2{
 .activity-marseille section{
     box-shadow: 0 0 1rem #0000002e;
     border-radius: 1rem;
-
     
 }
 .fourth-part-a{
@@ -561,40 +499,50 @@ h2{
     flex-direction: column;
     background-color: white;
     gap: 3rem;
-    height: 650px;
-    width: 100%;
+
 }
 
-.fourth-part-a section{
-    width:100%;
-    height: 50%;
+.second-part-a{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 3rem;
+
 }
 
-.fourth-part-a img{
+.second-a{
 
-    height: 80%;
+    box-shadow: #0000002e;
 }
+
 .third{
     background-color: white;
-    height: 650px;
-    width: 100%;
 }
+.fourth-part-a{
 
-.third img{
-    width:100%;
-    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
 }
-
 .activity-marseille  img{
-   max-width: 100%;
-   max-height: 100%;
-   border-radius: 1rem 1rem 0 0;
    
+    width: 15rem;
+    height:70%;
+    border-radius: 1rem 1rem 0 0;
+    
+    
+   
+}
+.first img{
+   
+ flex-basis:max-content;
+}
+.first{
+  
+    box-shadow: 0 0 1rem #0000002e;
+    background-color: white;
     
 }
-
-
-
 
 
 
@@ -628,16 +576,6 @@ h2{
         }
     }
     /*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-
-
-footer{
-    background-color: #F2F2F2;
-    width: 100%;
-    display:flex;
-flex-basis: 30%;
-justify-content: space-evenly;
-font-size: medium;
-padding: 1rem;
-margin-top: 2rem;
 }
+
 

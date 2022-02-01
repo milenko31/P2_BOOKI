@@ -36,7 +36,7 @@
     
         <div class="search-form"><!--div class pour regrouper les 3 éléments pour les traiter en CSS-->
             <i class="fas fa-map-marker-alt"></i><!--pour mettre une icône "maps"-->
-            <input class="imput" type="text" placeholder="Marseille,Paris" minlength="4" maxlength="15" size="25"><!--insérer champ text avec 
+            <input class="imput" type="text" placeholder="Marseille,Paris" size="25"><!--insérer champ text avec 
             comme texte vide placeholder et min 4 caract 15 max taille du champ 25-->
             <button><!--boutton rechercher-->
                 <span class="Titre_recherche">Rechercher</span><!--classe dans le boutton rechercher pour traiter l'icône loupe-->
@@ -150,14 +150,17 @@
                         <article>
                             <div class="popular-fix">
                             <img src="4_small/hotel_soleil_matin.jpg" alt="">
-                            <strong><p>Hotel Le soleil du matin<br></strong>Nuit à partir de <strong>128€</strong></p>
+                            </div>
+                            <div class="popular-fix-a">
+                                <h3>Hotel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <strong>128€</strong></p>
                               
-                            <p class="stars"> <i class="fas fa-star blue"></i><!--etoile-->
-                                   <i class="fas fa-star blue"></i><!--etoile-->
-                                   <i class="fas fa-star blue"></i><!--etoile-->
-                                   <i class="fas fa-star blue"></i><!--etoile-->
-                                   <i class="fas fa-star blue"></i><!--etoile-->
-                               </p>
+                                    <p class="stars"> <i class="fas fa-star blue"></i><!--etoile-->
+                                        <i class="fas fa-star blue"></i><!--etoile-->
+                                        <i class="fas fa-star blue"></i><!--etoile-->
+                                        <i class="fas fa-star blue"></i><!--etoile-->
+                                        <i class="fas fa-star blue"></i><!--etoile-->
+                                    </p>
                             </div> 
                         </article>
                             
@@ -191,15 +194,68 @@
 <!--ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE -->
 <h2>Activités à Marseille</h2>
 <div class="activity-marseille">
-        <div class="first"><strong>Vieux port</strong>
-            <img src="1_xlarge/vieux_port.jpg" alt=""></div>
-       <div class="second"><strong>Fort de Pomègues</strong></div>
-       <div class="third"><strong>Ile du Frioul</strong></div>
-       <div class="fourth"><strong>Parc National des Calanques</strong></div>
-       <div class="fifth"><strong>Notre-Dame-de-la-Garde</strong></div>
-       <div class="sixth"><strong>Parc Longchamp</strong></div>
+        <section class="first">
+            <a href="">
+                <img src="1_xlarge/vieux_port.jpg" alt=""></i>
+                <h4>Vieux port</h4>
+            </a>
+        </section>
+
+        <div class="second-part-a">
+            <section class="second-a">
+                <a href="">
+                    <img src="1_xlarge/fort_pomegues.jpg" alt=""></i>
+                    <h4>Fort de Pomègues</h4>
+                </a>
+            </section>
+
+            <section class="second-b">
+                <a href="">
+                    <img src="1_xlarge/ile_friou.jpg" alt=""></i>
+                    <h4>Ile de Frioul</h4>
+                </a>
+            </section>
+            
+        </div>
+        <section class="third">
+            <a href="">
+                <img src="1_xlarge/calanques.jpg" alt=""></i>
+                <h4>Parc National des Calanques</h4>
+            </a>
+        </section>
+        <div class="fourth-part-a">
+            <section class="fourth-a">
+                <a href="">
+                    <img src="1_xlarge/notre_dame.jpg" alt=""></i>
+                    <h4>Notre-Dame-de-la-Garde</h4>
+                </a>
+            </section>
+
+            <section class="fourth-b">
+                <a href="">
+                    <img src="1_xlarge/par_longchamp.jpg" alt=""></i>
+                    <h4>Parc Longchamp</h4>
+                </a>
+            </section>
+        </div>
 </div>
     </main>
+    <footer>
+        <div><h4>A propos</h4>
+<p>Fonctionnement du site</p>
+<p>Conditions générales de vente</p>
+<p>Données de confidentialités</p>
+        </div>
+
+        <div><h4>Nos hébergements</h4>
+            <p>Charte qualité</p>
+            <p>Soummetre votre hotel</p>
+        </div>
+        <div><h4>Assistance</h4>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </div>
+    </footer>
     </body><!--corps de la page-->
 
 </html>
