@@ -427,12 +427,8 @@ button{
     
 }
 
-/*LES PLUS POPULAIRES*/
-.popular-fix img{
-width:8.5rem;
-height: 7.5rem;
+/*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*/
 
-}
 
 
 /*AFFICHAGE EN COLONNE HAUT VERS LE BAS*/
@@ -448,6 +444,8 @@ height: 7.5rem;
     border-radius: 1rem;
    
 }
+
+
 /*LES 3 ARTICLES A DROITE*/
 .popular-flex article{
     
@@ -457,10 +455,42 @@ height: 7.5rem;
     border-radius: 1rem;
     background-color: white;
     box-shadow: 0 0 1rem #0000002e;
-    width: auto;
-    height: auto;
+  
+
+    
 
 }
+
+
+/*direction des 2 div dans l'article*/
+.popular-fix-a1 {
+    flex-direction: row;
+}
+/*image 100% de la hauteur de la div bordures arrondies*/
+.popular-fix-a1 img{
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    width:8.5rem;
+
+}
+/*marge 0*/
+.popular-fix-a{
+    margin: 0;
+    
+}
+/*marge 0 pour le H3*/
+.popular-fix-a h3{
+    margin: 0;
+}
+/*marge 0 pour les paragraphes*/
+.popular-fix-a p{
+    margin: 0;
+}
+/*marge 0 pour les étoiles restent collées*/
+.popular-fix-a .blue{
+    padding:0;
+}
+
 
 /*ARRIERE PLAN DU CARRE*/
 .popular-flex {
