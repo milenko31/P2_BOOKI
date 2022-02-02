@@ -29,6 +29,7 @@ a{
     /*le 0 pour aucun changement haut et bas et 2 pour écart vertical*/
     /*rem pour unités plus flexibles et offrent plus de responsivité et
     de lisibilités aux applications, 1 rem = 16px etc...*/
+    height: 80px;/*taille de l'icône BOOOKI*/
 }
 
 nav{
@@ -54,7 +55,6 @@ nav a:hover{
 
 .nav-button{
 
-    font-weight: bold;
     color:black;
 
 }
@@ -122,16 +122,17 @@ nav a:hover{
 
 .search-form{
 
-    padding-left: 1.9rem;/*marge 1.9rem pour égaliser avec le reste*/
     border: 1px solid lightgrey flex;/*5135241683541354168352415*/
     display: flex;/*pour adapter le flex i+imput+search*/
+    height: 50px;
+   
 
 }
 
 /*barre de recherche imput*/
 
 .search-form .imput{
-
+    border: 1px solid #F2F2F2;/*bordure du imput en lightgrey*/
     overflow: auto;/*adapte sa longueur en fonction de la taille d'écran pour ne pas dépasser*/
 }
 
@@ -148,8 +149,8 @@ nav a:hover{
 /*icône maps*/
 
 i{
-    padding: 0.8rem 1rem;/*écart 0.8/1*/
-    background-color: lightgrey;/*arrière-plan couleur gris clair*/
+    padding: 1rem 1rem;/*écart 0.8/1*/
+    background-color: #f2f2f2;/*arrière-plan couleur gris clair*/
     border-radius: 0.8rem 0rem 0rem 0.8rem;/*bordures arrondies 0.8 haut gauche / 0 haut droite/ 0 bas droite /0.8 bas gauche*/
     border: none;
   
@@ -163,6 +164,8 @@ button{
     border: none;
     cursor: pointer;
     opacity: 0.9;
+    font-weight: bold;
+    font-size: medium;
 }
 
 /*texte quand le champ de saisie est vide*/
@@ -193,6 +196,8 @@ button{
     display: flex;/*aligné et non chacun à la ligne*/
     margin-top: 32px;/* marge haute 32px pour ajuster*/
     flex-wrap: wrap;
+  
+  
 
 }
 
@@ -200,7 +205,7 @@ button{
 
 {
     
-    margin: 0 32px 16px 0;/*marger les titres des filtres*/
+    margin:8px 16px 16px 8px ;/*marger les titres des filtres*/
     display: flex;/* aligner FILTRES avec le reste*/
     align-items: center;/*centrer*/
     
@@ -223,7 +228,7 @@ button{
 
 .filter_item:hover
 {
-
+    border: 2px solid #DEEBFF;
     color:black;/*noir sur le hover sur caractère*/
     opacity: 1;
     transform: scale(1.015);/*EFFET*/
@@ -237,13 +242,13 @@ button{
 
     background-color: #DEEBFF;
     border-radius: 100%;
-    height: 48px;
-    width: 48px;
+    height: 52px;
+    width: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: -2px;
-    opacity: 0.7;
+    opacity: 1;
 
 }
 
@@ -267,7 +272,7 @@ button{
 
  .results-message .fas{
      
-     color: blue;
+     color: #0065FC;
      width: 2rem;
      height: 2rem;
      border : 1px solid #d9d9d9;/*d9d9d9*/
@@ -277,6 +282,7 @@ button{
     justify-content: center;/*toujours ensemble*/
     margin-bottom: 1rem;/*marge basse 16 px*/
     margin-right: 0.5rem;/*marge droite 0.5*/
+    background-color: white;
 
 }
 
@@ -361,7 +367,7 @@ button{
 .apartments-list h3{
     
     flex-basis: 100%;
-    margin-left: 1rem;
+    margin-left: 2rem;
 
 }
 
@@ -376,10 +382,10 @@ button{
 /*ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
 .blue{
     
-    color: blue;
+    color: #0065FC;
     background-color: white;
     padding-left: 0rem;
-    margin:0 0.1rem 0 0.1rem;
+    
 
 }
 
@@ -490,7 +496,7 @@ button{
 .popular-fix-a .blue{
     padding:0;
 }
-
+.
 
 /*ARRIERE PLAN DU CARRE*/
 .popular-flex {
@@ -521,9 +527,8 @@ h2{
     margin-left: 1rem;
     gap: 2.5rem;
     background-color: white; 
-   display: flex;/*pour que les images s'alignent correct*/
-   height: 650px;
-   width: 100%;
+    display: flex;/*pour que les images s'alignent correct*/
+    width: 100%;
 }
 
 
@@ -532,14 +537,14 @@ h2{
     box-shadow: 0 0 1rem #0000002e;
     background-color: white;  
     width: 100%;
-    height:650px;
+  
     
     
    
 }
 .first img{
     width:100%;
-    height: 90%;
+   
 }
 
 .second-part-a{
@@ -548,13 +553,12 @@ h2{
     background-color: white;
     gap: 3rem;
   
-   height:100%;
     width: 100%;
     
     
 }
 .second-part-a section{
-    height:50%;/*hauteur 50%*/
+
     width:100%;/*toute la largeur*/
 }
 .second-a{
@@ -564,22 +568,21 @@ h2{
 }
 .second-a img{
     width:100%;
-    height:80%;
+
 }
 .second-b img{
     width:100%;
-    height:80%; 
+   
 }
 .second-b{
 
-    height:100%;
     width:100%;
 }
 .activity-marseille div{
    
 
     
-    align-content: space-between;
+   
     display: flex;
 }
 
@@ -594,33 +597,28 @@ h2{
     flex-direction: column;
     background-color: white;
     gap: 3rem;
-    height: 650px;
     width: 100%;
 }
 
 .fourth-part-a section{
     width:100%;
-    height: 50%;
 }
 
-.fourth-part-a img{
 
-    height: 80%;
-}
 .third{
     background-color: white;
-    height: 650px;
+    
     width: 100%;
 }
 
 .third img{
     width:100%;
-    height: 90%;
+  
 }
 
 .activity-marseille  img{
    max-width: 100%;
-   max-height: 100%;
+
    border-radius: 1rem 1rem 0 0;
    
     
