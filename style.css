@@ -313,7 +313,7 @@ button{
 .apartments-list .city{
 
     flex-basis: 66%;/*2 fractions de l'écran*/
-
+    padding: 25px;
 }
 
 
@@ -327,7 +327,7 @@ button{
 .apartments-list .popular{
 
     flex-basis: 33%;/*1 fraction de l'écran*/
-
+    padding: 25px;
 }
 
 
@@ -348,6 +348,21 @@ button{
     
 }
 
+
+
+.popular-flex h4{
+
+    font-size: large;
+    padding-left: 10px;
+
+}
+
+.popular-flex p{
+
+    padding-left: 10px;
+
+}
+
 .apartments-list .popular-flex{
 
     display: flex;
@@ -358,35 +373,34 @@ button{
 }
 
 .apartments-list .popular-flex div{
-    
-   
+
     display: flex;
 
 }
 
 .apartments-list h3{
-    
+
     flex-basis: 100%;
     margin-left: 2rem;
-    
+    font-size: x-large;
 
 }
 
 
 .city-apartments-list i{
-    
+
     padding-right: 0.1px;
     padding-top: 0px;
     padding-bottom: 0px;
+
 }
 
 /*ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
 .blue{
-    
+
     color: #0065FC;
     background-color: white;
     padding-left: 0rem;
-    
 
 }
 
@@ -399,18 +413,17 @@ button{
 
 }
 
-/*ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
+/* FINNNNN ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
 
 .city-apartments-list {
-    
+
     background-color: #f2f2f2; 
     padding: 0.5rem;
-    
-    
+
 }
 
 .city-apartments-list img{
-    
+
     border-radius: 1rem 1rem 0 0;
     width: 15rem;
     height: 10rem;
@@ -418,14 +431,14 @@ button{
 }
 
 .city .city-apartments-list article{
-    
+
     border: 1px solid white;
     padding : 4.8px;
     margin-bottom:auto;
     border-radius: 16px;
     background-color: white;
     box-shadow: 0 0 16px #0000002e;
-    
+
 }
 
 .city-apartments-list p{
@@ -436,7 +449,11 @@ button{
 
 /*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*/
 
+.afficher-plus{
 
+    padding: 0 0 16px 35px;
+
+}
 
 /*AFFICHAGE EN COLONNE HAUT VERS LE BAS*/
 .popular-fix-a{
