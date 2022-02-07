@@ -514,7 +514,8 @@ button{
 .main-marseille{
     height: 650px;
     max-height: 650px;
-    width:100%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /*H2 activités à Marseille*/
@@ -526,14 +527,16 @@ h2{
 /*Labels sur groupe d'image*/
 .activity-marseille h4{
     font-weight: bold;
-    padding-left:16px;
+    font-size: large;
+    margin:0%;
+    padding: 8px 0 0 25px;
 }
+
 /*Labels sur groupe d'image*/
 
 .main-marseille .activity-marseille{
     height: 575px;
     max-height: 575px;
-    width:100%;
     gap: 2rem;
     background-color: white; 
     display: flex;/*pour que les images s'alignent correct*/
@@ -553,11 +556,21 @@ h2{
     width:100%;
 }
 
+/*config image partie 1*/
+.first img{
+    height: 90%;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
 /*partie 2 séparée en 2*/
 .second-a div{
     display: flex;
     flex-basis: 60%;
+    
 }
+
 .second-b div{
     flex-basis: 40%;
 }
@@ -577,27 +590,6 @@ h2{
     object-fit: cover;
 }
 
-.fourth-part-a img{
-    height: 80%;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-    object-fit: cover;
-}
-/*partie 4 séparée en 2*/
-.fourth-part-a div{
-    height: 286px;
-    max-height: 286px;
-    width: 100%;
-}
-
-/*config image partie 1*/
-.first img{
-    height: 90%;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-    object-fit: cover;
-}
-
 /*config image partie 3*/
 .third img{
     height: 90%;
@@ -606,8 +598,21 @@ h2{
     object-fit: cover;
 }
 
+.fourth-part-a img{
+    height: 80%;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
 
-    
+/*partie 4 séparée en 2*/
+.fourth-part-a div{
+    height: 286px;
+    max-height: 286px;
+}
+
+
+
     /*media queries 800px*/
 @media (max-width: 800px){
         .search-form .Titre_recherche{
