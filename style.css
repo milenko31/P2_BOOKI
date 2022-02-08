@@ -158,6 +158,7 @@ i{
 
 /*boutton rechercher*/
 button{
+
     border-radius: 0rem 0.8rem 0.8rem 0rem;/*bordure arrondies en haut a droite et bas droite*/
     color: white;/*couleur du texte blanc sur le boutton*/
     background-color:#0065fc;/*couleur arrière-plan du boutton rechercher en bleu*/
@@ -166,16 +167,22 @@ button{
     opacity: 0.9;
     font-weight: bold;
     font-size: medium;
+
 }
 
+.imput{
+    padding-left: 20px;
+    font-size: medium;
+}
 /*texte quand le champ de saisie est vide*/
 ::placeholder{
 
     color: black;/*couleur grise*/
     font-weight: bold;/*gras*/
-    font-size: 0.8rem;/*taille 0.8 rem*/
+    font-size: medium;
 
 }
+
 
 /*icône loupe*/
 
@@ -479,40 +486,56 @@ button{
     border-radius: 1rem;
     background-color: white;
     box-shadow: 0 0 1rem #0000002e;
-  
-
-    
 
 }
 
 
 /*direction des 2 div dans l'article*/
 .popular-fix-a1 {
+
     flex-direction: row;
+
 }
+
+
 /*image 100% de la hauteur de la div bordures arrondies*/
 .popular-fix-a1 img{
+
     height: 100%;
     border-radius: 1rem 0 0 1rem;
     width:8.5rem;
 
 }
+
 /*marge 0*/
 .popular-fix-a{
+
     margin: 0;
     
 }
+
+
 /*marge 0 pour le H3*/
 .popular-fix-a h3{
+
     margin: 0;
+
 }
+
+
 /*marge 0 pour les paragraphes*/
 .popular-fix-a p{
+
     margin: 0;
+
 }
+
+
 /*marge 0 pour les étoiles restent collées*/
 .popular-fix-a .blue{
+
     padding:0;
+
 }
 
 
@@ -529,66 +552,90 @@ button{
 /*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/  
 
 .main-marseille{
+
     height: 650px;
     max-height: 650px;
     margin-left: 50px;
     margin-right: 50px;
+
 }
+
 
 /*H2 activités à Marseille*/
 h2{
+
     margin-left: 1rem;
+
 }
+
+
 /*H2 activités à Marseille*/
 
 /*Labels sur groupe d'image*/
 .activity-marseille h4{
+
     font-weight: bold;
     font-size: large;
     margin:0%;
     padding: 8px 0 0 25px;
+
 }
 
 /*Labels sur groupe d'image*/
 
 .main-marseille .activity-marseille{
+
     height: 575px;
     max-height: 575px;
     gap: 2rem;
     background-color: white; 
     display: flex;/*pour que les images s'alignent correct*/
+
 }
 
 
 .main-marseille .activity-marseille div{
+
     display: flex;/*aligner toute les images*/
     width:100%;
     box-shadow: 0 0 1rem #0000002e;
     border-radius: 1rem;
+
 }
+
+
 /*dimension des sections*/
 .activity-marseille section{
+
     height: 575px;
     max-height: 575px;
     width:100%;
+
 }
+
 
 /*config image partie 1*/
 .first img{
+
     height: 90%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+
 }
+
 
 /*partie 2 séparée en 2*/
 .second-a div{
+
     display: flex;
     flex-basis: 60%;
     
 }
 
+
 .second-b div{
+
     flex-basis: 40%;
 }
 
