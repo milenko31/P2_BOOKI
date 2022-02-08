@@ -4,11 +4,19 @@
 /* j'importe ma selection de police de google font en suivant la fiche synthèse*/
 * {/* l'étoile permet de tout séléctionné on parle de WILDCARD*/
     box-sizing: border-box;
+
+    
     /*box-sizing définit hauteur et largeur totale d'un élément*/
     /*border-box indique au navigateur de prendre en compte bordure et remplissage 
     dans la valeur définie pour la largeur et la hauteur*/
     font-family :"Raleway","sans-serif";/*police Raleway pour toute la page ainsi qu'une font fallback en cas 
     ou cette police ne marche ou si il y a problème, sans-serif étant la police de dernier recours pour tout site web*/
+}
+
+body{
+
+    margin: 0;
+
 }
 
 a{
@@ -17,7 +25,6 @@ a{
     text-decoration:none;/*j'enlève le surlignage*/
 
 }
-
 
 /*# pour attribuer un id pour pouvoir modifier les propriétés de l'unique icône*/
 
@@ -80,7 +87,7 @@ nav a:hover{
 
         flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
         text-align: center;/*aligner le texte et centrer*/
-         border-bottom: 3px solid #f2f2f2;/*bordure basse grise*/
+        border-bottom: 3px solid #f2f2f2;/*bordure basse grise*/
        
     }
     
@@ -93,12 +100,15 @@ nav a:hover{
     }
 
 }
+
 /*QUERIES QUERIES QUERIES QUERIES QUERIES QUERIES QUERIES QUERIES*/
 .sub-nav a{
+
     flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
     text-align: center;/*aligner le texte et centrer*/
    
 }
+
 /*FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR*/
 
 .Titre_recherche{
@@ -132,8 +142,10 @@ nav a:hover{
 /*barre de recherche imput*/
 
 .search-form .imput{
+
     border: 1px solid #F2F2F2;/*bordure du imput en lightgrey*/
     overflow: auto;/*adapte sa longueur en fonction de la taille d'écran pour ne pas dépasser*/
+
 }
 
 /*affichage du boutton quand on survole*/
@@ -178,7 +190,6 @@ button{
 
 }
 
-
 /*texte quand le champ de saisie est vide*/
 ::placeholder{
 
@@ -188,7 +199,6 @@ button{
 
 }
 
-
 /*icône loupe*/
 
 .fas.fa-search{
@@ -196,7 +206,6 @@ button{
      display: none;/*pas afficher la loupe en taille pc*/
 
 }
-
 
 /*fin de media queries 800pxfin de media queries 800px*/
 
@@ -209,8 +218,6 @@ button{
     margin-top: 32px;/* marge haute 32px pour ajuster*/
     flex-wrap: wrap;
   
-  
-
 }
 
 .filter_itemTitle
@@ -251,7 +258,6 @@ button{
 .filter_itemsIcon
 {
     color: #0065fc;
-
     background-color: #DEEBFF;
     border-radius: 100%;
     height: 52px;
@@ -264,8 +270,7 @@ button{
 
 }
 
-.filter_itemTxt
-{
+.filter_itemTxt{
 
     margin: 0 16px;
 
@@ -284,10 +289,10 @@ button{
 
  .results-message .fas{
      
-     color: #0065FC;
-     width: 2rem;
-     height: 2rem;
-     border : 1px solid #d9d9d9;/*d9d9d9*/
+    color: #0065FC;
+    width: 2rem;
+    height: 2rem;
+    border : 1px solid #d9d9d9;/*d9d9d9*/
     border-radius: 50%;/*cercle 50 pourcent*/
     display:flex;/*les 3 frangins */
     align-items: center;/*pour tout centrer*/
@@ -309,9 +314,6 @@ button{
 
 }
 
-
-
-
 .apartments-list > div{
     
     border: 1px solid white;
@@ -321,13 +323,12 @@ button{
     
 }
 
-
 .apartments-list .city{
 
     flex-basis: 66%;/*2 fractions de l'écran*/
     padding: 25px;
-}
 
+}
 
 .apartments-list .city span{
     
@@ -335,13 +336,11 @@ button{
 
 }
 
-
 .apartments-list .popular{
 
     flex-basis: 33%;/*1 fraction de l'écran*/
     padding: 25px;
 }
-
 
 .city-apartments-list{
 
@@ -359,8 +358,6 @@ button{
     flex-basis: calc(33%-1rem);
     
 }
-
-
 
 .popular-flex h4{
 
@@ -494,9 +491,8 @@ button{
 
 }
 
-
 /*direction des 2 div dans l'article*/
-.popular-fix-a1 {
+.popular-fix-a1{
 
     flex-direction: row;
 
@@ -608,7 +604,6 @@ h2{
 
 }
 
-
 /*dimension des sections*/
 .activity-marseille section{
 
@@ -617,7 +612,6 @@ h2{
     width:100%;
 
 }
-
 
 /*config image partie 1*/
 .first img{
@@ -629,7 +623,6 @@ h2{
 
 }
 
-
 /*partie 2 séparée en 2*/
 .second-a div{
 
@@ -638,7 +631,6 @@ h2{
     
 }
 
-
 .second-b div{
 
     flex-basis: 40%;
@@ -646,25 +638,31 @@ h2{
 
 /*partie 2 img config*/
 .second-a img{
+
     height: 80%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+
 }
 
 .second-b img{
+
     height: 80%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+
 }
 
 /*config image partie 3*/
 .third img{
+
     height: 90%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+
 }
 
 .fourth-part-a img{
@@ -676,24 +674,27 @@ h2{
 
 /*partie 4 séparée en 2*/
 .fourth-part-a div{
+
     height: 286px;
     max-height: 286px;
+
 }
-
-
 
     /*media queries 800px*/
 @media (max-width: 800px){
         .search-form .Titre_recherche{
+
             display: none;/*enlever le boutton rechercher quand on reduit l'écran*/
             
         }
         
         /*icône loupe*/
         .fas.fa-search{
+
             display: inline;/*affiche la loupe aligné avec le reste*/
             color: white;/* en blanc*/
             background-color: #0065fc;/* avec fond bleu*/
+
         }
 }
     
@@ -704,14 +705,18 @@ h2{
         .apartments-list{
             
             flex-direction: column;
+
         }
         .apartments-list .popular-flex{
+
             order: -1;
+
         }
 }
     /*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
 
 footer{
+
     background-color: #F2F2F2;
     width: 100%;
     display:flex;
@@ -720,5 +725,6 @@ footer{
     font-size: medium;
     padding: 1rem;
     margin-top: 2rem;
+    
 }
 
