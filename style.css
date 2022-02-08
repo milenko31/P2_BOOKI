@@ -149,9 +149,10 @@ nav a:hover{
 /*icône maps*/
 
 i{
-    padding: 1rem 1rem;/*écart 0.8/1*/
+
+    padding: 18px 19px 19px 19px;
     background-color: #f2f2f2;/*arrière-plan couleur gris clair*/
-    border-radius: 0.8rem 0rem 0rem 0.8rem;/*bordures arrondies 0.8 haut gauche / 0 haut droite/ 0 bas droite /0.8 bas gauche*/
+    border-radius: 12.8px 0 0 12.8px;
     border: none;
   
 }
@@ -171,13 +172,17 @@ button{
 }
 
 .imput{
-    padding-left: 20px;
+
+    padding-left: 25px;
     font-size: medium;
+
 }
+
+
 /*texte quand le champ de saisie est vide*/
 ::placeholder{
 
-    color: black;/*couleur grise*/
+    color: rgb(59 59 59);/*couleur grise*/
     font-weight: bold;/*gras*/
     font-size: medium;
 
