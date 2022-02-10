@@ -45,6 +45,7 @@ nav{
     align-items:center;/*aligne l'objet au sein de son conteneur / center pour le centre du conteneur*/
     justify-content: flex-end;/*justifie entre et autour des éléments dans le conteneur / éléments flexibles groupés à la fin*/
     flex-wrap: wrap;/*En fonction de la redimension de la page mes liens vont à ligne de manière liénaire au lieu de suivre le logo vers la gauche de la page*/
+    padding-top: 4px;
 }
 
 nav a{
@@ -314,6 +315,13 @@ button{
 
 }
 
+.city-apartments-list a{
+
+    cursor: pointer;
+    opacity: 0.9; 
+
+}
+
 .apartments-list > div{
     
     border: 1px solid white;
@@ -333,7 +341,21 @@ button{
 .apartments-list .city span{
     
     font-weight: bold;
+    
+}
+.city-apartments-list a:hover{
+    
+    transform: scale(1.03);
+    transition: transform 200ms;
+    transition-duration: 0.1s;   
+    opacity: 1; 
+    cursor: pointer;
+    
+}
 
+.city-apartments-list h3{
+    margin: 0;
+    padding-left: 12px;
 }
 
 .apartments-list .popular{
@@ -346,10 +368,14 @@ button{
 
     display: flex;/*flex sur la liste city*/
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-    margin-bottom: 1rem;
+    gap: 30px;
+    justify-content: center;
+    
 
+}
+
+.city h2{
+    padding-left: 40px;
 }
 
 .city-apartments-list div{
@@ -357,42 +383,6 @@ button{
     
     flex-basis: calc(33%-1rem);
     
-}
-
-.popular-flex h4{
-
-    font-size: large;
-    padding-left: 10px;
-
-}
-
-.popular-flex p{
-
-    padding-left: 10px;
-
-}
-
-.apartments-list .popular-flex{
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    
-}
-
-.apartments-list .popular-flex div{
-
-    display: flex;
-
-}
-
-.apartments-list h3{
-
-    flex-basis: 100%;
-    margin-left: 2rem;
-    font-size: x-large;
-
 }
 
 
@@ -406,7 +396,7 @@ button{
 
 /*ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
 .blue{
-
+    
     color: #0065FC;
     background-color: white;
     padding-left: 0rem;
@@ -434,8 +424,9 @@ button{
 .city-apartments-list img{
 
     border-radius: 1rem 1rem 0 0;
-    width: 15rem;
-    height: 10rem;
+    width: 245px;
+    height: 120px;
+    object-fit: cover;
 
 }
 
@@ -447,7 +438,7 @@ button{
     border-radius: 16px;
     background-color: white;
     box-shadow: 0 0 16px #0000002e;
-
+    
 }
 
 .city-apartments-list p{
@@ -460,27 +451,124 @@ button{
 
 .afficher-plus{
 
-    padding: 0 0 16px 35px;
+    padding: 0px 0 0px 40px;
+    font-weight: bold;
 
 }
 
+.popular-flex{
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.popular a{
+
+    cursor: pointer;
+    opacity: 0.9; 
+
+}
+
+.popular a:hover{
+
+    transform: scale(1.03);
+    transition: transform 200ms;
+    transition-duration: 0.1s;   
+    opacity: 1; 
+    cursor: pointer;
+
+}
+
+.popular-flex i{
+    
+    padding-left: 155px;
+   font-size: 22px;
+
+}
+
+.popular-flex{
+
+    padding-bottom: 16px;
+
+}
+
+.popular-fix{
+
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+
+}
+.popular article{
+
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 135px;
+    margin-bottom: 34px;
+    
+}
+
+.popular-img img{
+
+    height: 121px;
+    width: 115px;
+    border-radius: 16px 0 0 16px;
+   
+}
+
+.popular-rest{
+
+    display:flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+}
+
+.popular-rest h3{
+    margin:0;
+
+}
+
+.popular-rest p{
+
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.popular-rest-stars i{
+
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 56px 0 0 0;
+
+}
+
+.popular-rest-stars-b i{
+    padding: 36px 0 0 0;
+}
 /*AFFICHAGE EN COLONNE HAUT VERS LE BAS*/
-.popular-fix-a{
+/*.popular-fix-a{
 
     display:flex;
     flex-direction: column;
 }
 
 /*ARRIERE PLAN GRIS ARRONDI*/
-.popular-flex {
+/*.popular-flex {
     
     border-radius: 1rem;
    
-}
+}*/
 
 
 /*LES 3 ARTICLES A DROITE*/
-.popular-flex article{
+/*.popular-flex article{
     
     border: 1px solid white;
     padding : 0.3rem;
@@ -489,65 +577,65 @@ button{
     background-color: white;
     box-shadow: 0 0 1rem #0000002e;
 
-}
+}*/
 
 /*direction des 2 div dans l'article*/
-.popular-fix-a1{
+/*.popular-fix-a1{
 
     flex-direction: row;
 
-}
+}*/
 
 
 /*image 100% de la hauteur de la div bordures arrondies*/
-.popular-fix-a1 img{
+/*.popular-fix-a1 img{
 
     height: 100%;
     border-radius: 1rem 0 0 1rem;
     width:8.5rem;
 
-}
+}*/
 
 /*marge 0*/
-.popular-fix-a{
+/*.popular-fix-a{
 
     margin: 0;
     
-}
+}*/
 
 
 /*marge 0 pour le H3*/
-.popular-fix-a h3{
+/*.popular-fix-a h3{
 
     margin: 0;
 
-}
+}*/
 
 
 /*marge 0 pour les paragraphes*/
-.popular-fix-a p{
+/*.popular-fix-a p{
 
     margin: 0;
 
-}
+}*/
 
 
 /*marge 0 pour les étoiles restent collées*/
-.popular-fix-a .blue{
+/*.popular-fix-a .blue{
 
     padding:0;
 
-}
+}*/
 
 
 /*ARRIERE PLAN DU CARRE*/
-.popular-flex {
+/*.popular-flex {
     
     background-color: #f2f2f2; 
     padding: 0.5rem;
     display: flex;
 
-}
+}*/
 
 
 /*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/  
@@ -563,9 +651,9 @@ button{
 
 
 /*H2 activités à Marseille*/
-h2{
+.main-marseille h2{
 
-    margin-left: 1rem;
+    margin-left: 16px;
 
 }
 
@@ -588,7 +676,7 @@ h2{
 
     height: 575px;
     max-height: 575px;
-    gap: 2rem;
+    gap: 16px;
     background-color: white; 
     display: flex;/*pour que les images s'alignent correct*/
 
