@@ -74,35 +74,7 @@ nav a:hover{
 
 }
                
-                            /*c'est une media queries qui réagit quand on entre sur un écran au dessous de 800px*/
-@media (max-width: 768px)  
-{
-    .sub-nav{
-       
-        flex-basis: 100%;/* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
-        display:flex;
-
-    }
-    
-    .sub-nav a{
-
-        flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
-        text-align: center;/*aligner le texte et centrer*/
-        border-bottom: 3px solid #f2f2f2;/*bordure basse grise*/
-       
-    }
-    
-    .sub-nav a:hover{/*menu 800px ou moins survolage*/
-
-        color: #0065fc;/*survolage afficher en bleu*/
-        border-top: 3px solid transparent;/*bordure haute transparente */
-        border-bottom: 3px solid #0065fc;/*bordure basse bleu */
-
-    }
-
-}
-
-/*QUERIES QUERIES QUERIES QUERIES QUERIES QUERIES QUERIES QUERIES*/
+ 
 .sub-nav a{
 
     flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
@@ -114,19 +86,20 @@ nav a:hover{
 
 .Titre_recherche{
 
-    padding:0 2rem;
+    padding: 16px;
 
 }
 
 
 .Titre_recherche h1{
 
-    margin-bottom: 0.1rem;
+    margin: 0 0 1px 20px;
 }
 
 .Titre_recherche p{
 
-    margin-bottom: 2rem;
+    margin: 15px 0 32px 20px;
+
 }
 
 /*variable i+imput+search*/
@@ -208,7 +181,7 @@ button{
 
 }
 
-/*fin de media queries 800pxfin de media queries 800px*/
+
 
 /*FILTERS FILTERS FILTERS FILTERS FILTERS FILTERS*/
 
@@ -229,7 +202,7 @@ button{
     margin:8px 16px 16px 8px ;/*marger les titres des filtres*/
     display: flex;/* aligner FILTRES avec le reste*/
     align-items: center;/*centrer*/
-    
+    flex-wrap: wrap;
 }
 
 .filter_item
@@ -244,7 +217,7 @@ button{
     cursor: pointer;/*le pointer quand on arrive dessus*/
     transition-duration: 0.1s;/*transition sur le filtre*/
     font-weight: bold;/*gras*/
-
+    margin-bottom: 16px;
 }
 
 .filter_item:hover
@@ -306,6 +279,12 @@ button{
 
 }
 
+/*icone petit i margin*/
+.results-message i{
+
+    padding: 15px;
+
+}
 /*RESULTS MESSAGE RESULTS MESSAGE RESULTS MESSAGE RESULTS MESSAGE */
 
 /*APARTMENTS-LIST APARTMENTS-LIST APARTMENTS-LIST */
@@ -721,42 +700,10 @@ margin-bottom: 30px;
 }
 
 
-    /*media queries 800px*/
-@media (max-width: 800px){
-        .search-form .Titre_recherche{
 
-            display: none;/*enlever le boutton rechercher quand on reduit l'écran*/
-            
-        }
-        
-        /*icône loupe*/
-        .fas.fa-search{
 
-            display: inline;/*affiche la loupe aligné avec le reste*/
-            color: white;/* en blanc*/
-            background-color: #0065fc;/* avec fond bleu*/
 
-        }
-}
-    
-    /*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-    
-@media(max-width: 800px){
-        
-        .apartments-list{
-            
-            flex-direction: column;
-
-        }
-        .apartments-list .popular-flex{
-
-            order: -1;
-
-        }
-}
-    /*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-
-    /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+/*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
 footer{
 
     background-color: #F2F2F2;
@@ -775,14 +722,170 @@ footer{
 
 /*pour enelver les points généré par la balise ul*/
 ul {
-
+    
     list-style-type : none;
-
+    
 }
 
 li{
-
+    
     margin-bottom: 16px;
-
+    
 }
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+
+
+/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
+
+@media(max-width: 768px){
+    
+    .apartments-list{
+        
+        flex-direction: column-reverse;
+        
+    }
+
+        .popular-article{
+
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .popular-article i{
+
+            background-color: transparent;
+            padding-bottom: 30px;
+
+        }
+}
+
+@media(max-width: 992px){
+    
+    .apartments-list{
+        
+        flex-direction: column-reverse;
+        
+    }
+
+    .popular-article{
+
+        display: flex;
+        gap: 30px;
+
+    }
+    .popular-article .popular-rest-stars i{
+
+        background-color: transparent;
+        padding-bottom: 30px;
+        padding: 0px 0 0 0;
+
+    }
+}
+   
+}
+
+
+/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
+
+/*media queries barre rechercher etc*/
+@media (max-width: 768px){
+    .search-form .Titre_recherche{
+
+        display: none;/*enlever le boutton rechercher quand on reduit l'écran*/
+        
+    }
+    
+    /*icône loupe*/
+    .fas.fa-search{
+
+        display: inline;/*affiche la loupe aligné avec le reste*/
+        color: white;/* en blanc*/
+        background-color: #0065fc;/* avec fond bleu*/
+        padding: 0px 18px 0 18px;
+
+    }
+}
+
+
+/* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*/
+@media(max-width: 768px){
+
+    .filter_itemTitle{
+
+        width: 100%;
+
+    }
+}
+
+
+/* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*/
+
+
+/*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*/
+@media (max-width: 768px){  
+                
+    .sub-nav{
+                                  
+        flex-basis: 100%;/* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
+        display:flex;
+                           
+    }                                                              
+                               
+        .sub-nav a{
+                           
+            flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
+            text-align: center;/*aligner le texte et centrer*/
+            border-bottom: 3px solid #f2f2f2;/*bordure basse grise*/
+                                  
+        }                               
+
+/*menu 768px ou moins survolage borudre nav*/
+            .sub-nav a:hover{
+                           
+                color: #0065fc;/*survolage afficher en bleu*/
+                border-top: 3px solid transparent;/*bordure haute transparente */
+                border-bottom: 3px solid #0065fc;/*bordure basse bleu */
+                           
+            }   
+                                        
+                           
+} 
+/*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*/                           
+                           
+/*MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER */
+
+
+@media(max-width: 768px){
+
+    .master-footer-a{
+
+        flex-direction: column;
+
+    }
+
+        .footer-a{
+
+            padding: 10px;
+        }
+
+
+
+}
+
+@media(max-width: 992px){
+
+    .master-footer-a{
+
+        flex-direction: column;
+
+    }
+
+    .footer-a{
+
+        padding: 10px;
+    }
+
+
+
+}
