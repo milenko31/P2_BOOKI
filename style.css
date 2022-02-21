@@ -19,6 +19,7 @@ body{
 
 }
 
+
 a{
     
     color:black;/*couleur noir pour les liens d'hébergements et d'activités*/
@@ -30,13 +31,10 @@ a{
 
 #logo {
    
-    margin-right: auto;/*margin définit les tailles de marges et right les côtés droit et gauches*/
-    padding: 0 32px;
-   /*padding pour écarts de remplissage sur les quatre côtés*/
-    /*le 0 pour aucun changement haut et bas et 2 pour écart vertical*/
-    /*rem pour unités plus flexibles et offrent plus de responsivité et
-    de lisibilités aux applications, 1 rem = 16px etc...*/
-    height: 80px;/*taille de l'icône BOOOKI*/
+     padding: 0 32px;
+     height: 57px;
+     margin: 15px auto 15px 15px;
+
 }
 
 nav{
@@ -54,7 +52,9 @@ nav a{
     border-top: 3px solid transparent;/*bordure haute des menus transparents à l'affichage*/
 
 }
-                                    /*hover pour survolage */
+                                   
+/*hover pour survolage */
+
 nav a:hover{
 
     border-top: 3px solid #0065fc;/*bordure haute devient bleu au survolage des menus en haut*/
@@ -77,7 +77,7 @@ nav a:hover{
  
 .sub-nav a{
 
-    flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
+    flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768 px ou moins*/
     text-align: center;/*aligner le texte et centrer*/
    
 }
@@ -86,19 +86,19 @@ nav a:hover{
 
 .Titre_recherche{
 
-    padding: 16px;
+    padding: 16px 8px;
 
 }
 
 
 .Titre_recherche h1{
 
-    margin: 0 0 1px 20px;
+    margin: 0 0 6px 0;
 }
 
 .Titre_recherche p{
 
-    margin: 15px 0 32px 20px;
+    margin: 0 0 16px 0;
 
 }
 
@@ -191,7 +191,7 @@ button{
     display: flex;/*aligné et non chacun à la ligne*/
     margin-top: 32px;/* marge haute 32px pour ajuster*/
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   
 }
 
@@ -199,7 +199,7 @@ button{
 
 {
     
-    margin:8px 16px 16px 8px ;/*marger les titres des filtres*/
+    margin:8px 31px 16px 8px ;/*marger les titres des filtres*/
     display: flex;/* aligner FILTRES avec le reste*/
     align-items: center;/*centrer*/
     flex-wrap: wrap;
@@ -292,7 +292,7 @@ button{
 .apartments-list{
 
     display: flex;
-    gap: 1rem;
+    gap: 32px;
 
 }
 
@@ -342,7 +342,7 @@ button{
 .apartments-list .popular{
 
     flex-basis: 33%;/*1 fraction de l'écran*/
-    padding: 25px;
+    padding: 25px 25px 10px 25px
 }
 
 .city-apartments-list{
@@ -357,6 +357,7 @@ button{
 
 .city h2{
     padding-left: 40px;
+    flex: initial;
 }
 
 .city-apartments-list div{
@@ -381,6 +382,7 @@ button{
     color: #0065FC;
     background-color: white;
     padding-left: 0rem;
+    font-size: 13px;
 
 }
 
@@ -390,6 +392,7 @@ button{
     background-color: white;
     padding-left: 0rem;
     margin:0 0.1rem 0 0.1rem;
+    font-size: 13px;
 
 }
 
@@ -430,7 +433,7 @@ button{
 
 /*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*/
 
-.afficher-plus{
+.afficher-plus {
 
     padding: 0px 0 0px 40px;
     font-weight: bold;
@@ -451,7 +454,7 @@ button{
 
 }
 
-.popular a:hover{
+.popular article:hover{
 
     transform: scale(1.03);
     transition: transform 200ms;
@@ -490,15 +493,15 @@ button{
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    height: 135px;
+    height: 156px;
     margin-bottom: 34px;
     
 }
 
 .popular-img img{
 
-    height: 121px;
-    width: 115px;
+    height: 145px;
+    width: 138px;
     border-radius: 16px 0 0 16px;
     object-fit: cover;
    
@@ -508,12 +511,12 @@ button{
 
     display:flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 20px;
 
 }
 
 .popular-rest h3{
-    margin:0;
+    margin:10px 0 0 0;
 
 }
 
@@ -527,12 +530,12 @@ button{
 
     background-color: white;
     margin-bottom: 10px;
-    padding: 56px 0 0 0;
+    padding: 65px 0 0 0;
 
 }
 
 .popular-rest-stars-b i{
-    padding: 36px 0 0 0;
+    padding: 46px 0 0 0;
 }
 
 
@@ -540,10 +543,9 @@ button{
 
 .main-marseille{
 
-    height: 600px;
-    max-height: 600px;
-    margin-left: 55px;
-    margin-right: 55px;
+    height: 580px;
+    max-height: 580px;
+    margin-top: 50px;
 
 }
 
@@ -564,16 +566,16 @@ button{
     font-weight: bold;
     font-size: large;
     margin:0%;
-    padding: 12px 0 0 25px;
+    padding: 12px 0 15px 25px;
 
 }
 /*Labels sur groupe d'image*/
 
 .main-marseille .activity-marseille{
 
-    height: 540px;
-    max-height: 540px;
-    gap: 30px;
+    height: 480px;
+    max-height: 480px;
+    gap: 50px;
     background-color: white; 
     display: flex;/*pour que les images s'alignent correct*/
 
@@ -582,7 +584,7 @@ button{
 
 .main-marseille .activity-marseille div{
 
-    display: flex;/*aligner toute les images*/
+
     width:100%;
     box-shadow: 0 0 1rem #0000002e;
     border-radius: 1rem;
@@ -592,16 +594,17 @@ button{
 /*dimension des sections*/
 .activity-marseille section{
 
-    height: 540px;
-    max-height: 540px;
+    height: 480px;
+    max-height: 480px;
     width:100%;
+    
 
 }
 
 /*config image partie 1*/
 .first img{
 
-    height: 89%;
+    height: 87%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
@@ -610,40 +613,49 @@ button{
 
 .second-a a{
 
-    height: 270px;
+    height: 100%;
 }
 .second-a{
+    height: 250px;
+    margin-bottom: 49px;
+    
 
-    margin-bottom: 23px;
+}
 
+.second-b{
+   
+    height: 180px;
 }
 
 second-b a{
     height: 100px;
+    
 }
 /*partie 2 img config*/
 .second-a img{
 
-    height: 78%;
+    height: 77%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+    
 
 }
 
 .second-b img{
 
-    height: 75%;
+    height: 71%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+    
 
 }
 
 /*config image partie 3*/
 .third img{
 
-    height: 90%;
+    height: 87%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
@@ -658,7 +670,8 @@ second-b a{
 }
 
 .fourth-b img{
-    height: 80%;
+    
+    height: 74%;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
@@ -666,20 +679,21 @@ second-b a{
 
 .fourth-a{
 
-margin-bottom: 30px;
+    height: 210px;
+    margin-bottom: 47px;
 
 }
 
 .fourth-a a{
 
-    height: 212px;
-    width: 313px;
+    height: 100%;
+    
 
 }
 
 .fourth-b{
 
-    height: 300px;
+    height: 220px;
 
 }
 
@@ -689,7 +703,7 @@ margin-bottom: 30px;
     opacity: 0.9; 
 
 }
-.main-marseille a:hover{
+.first:hover, .second-a:hover, .second-b:hover, .third:hover, .fourth-a:hover, .fourth-b:hover{
 
     transform: scale(1.03);
     transition: transform 200ms;
@@ -709,10 +723,8 @@ footer{
     background-color: #F2F2F2;
     width: 100%;
     display:flex;
-    justify-content: space-around;
     font-size: medium;
-    padding: 1rem;
-    margin-top: 2rem;
+   
     
 }
 
@@ -729,163 +741,10 @@ ul {
 
 li{
     
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     
 }
-/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
 
-
-/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-
-@media(max-width: 768px){
-    
-    .apartments-list{
-        
-        flex-direction: column-reverse;
-        
-    }
-
-        .popular-article{
-
-            display: flex;
-            gap: 30px;
-
-        }
-
-        .popular-article i{
-
-            background-color: transparent;
-            padding-bottom: 30px;
-
-        }
-}
-
-@media(max-width: 992px){
-    
-    .apartments-list{
-        
-        flex-direction: column-reverse;
-        
-    }
-
-    .popular-article{
-
-        display: flex;
-        gap: 30px;
-
-    }
-    .popular-article .popular-rest-stars i{
-
-        background-color: transparent;
-        padding-bottom: 30px;
-        padding: 0px 0 0 0;
-
-    }
-}
-   
-}
-
-
-/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-
-/*media queries barre rechercher etc*/
-@media (max-width: 768px){
-    .search-form .Titre_recherche{
-
-        display: none;/*enlever le boutton rechercher quand on reduit l'écran*/
-        
-    }
-    
-    /*icône loupe*/
-    .fas.fa-search{
-
-        display: inline;/*affiche la loupe aligné avec le reste*/
-        color: white;/* en blanc*/
-        background-color: #0065fc;/* avec fond bleu*/
-        padding: 0px 18px 0 18px;
-
-    }
-}
-
-
-/* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*/
-@media(max-width: 768px){
-
-    .filter_itemTitle{
-
-        width: 100%;
-
-    }
-}
-
-
-/* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*/
-
-
-/*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*/
-@media (max-width: 768px){  
-                
-    .sub-nav{
-                                  
-        flex-basis: 100%;/* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
-        display:flex;
-                           
-    }                                                              
-                               
-        .sub-nav a{
-                           
-            flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 800 px ou moins*/
-            text-align: center;/*aligner le texte et centrer*/
-            border-bottom: 3px solid #f2f2f2;/*bordure basse grise*/
-                                  
-        }                               
-
-/*menu 768px ou moins survolage borudre nav*/
-            .sub-nav a:hover{
-                           
-                color: #0065fc;/*survolage afficher en bleu*/
-                border-top: 3px solid transparent;/*bordure haute transparente */
-                border-bottom: 3px solid #0065fc;/*bordure basse bleu */
-                           
-            }   
-                                        
-                           
-} 
-/*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*/                           
-                           
-/*MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER MEDIA FOOTER */
-
-
-@media(max-width: 768px){
-
-    .master-footer-a{
-
-        flex-direction: column;
-
-    }
-
-        .footer-a{
-
-            padding: 10px;
-        }
-
-
-
-}
-
-@media(max-width: 992px){
-
-    .master-footer-a{
-
-        flex-direction: column;
-
-    }
-
-    .footer-a{
-
-        padding: 10px;
-    }
-
-
-
-}
+footer div{
+    padding: 20px 240px 27px 0;
+}                      
