@@ -48,7 +48,7 @@ nav{
 
 nav a{
 
-    padding: 2rem;/*padding de 2 partout pour les liens dans nav*/
+    padding: 32px;/*padding de 32px partout pour les liens dans nav*/
     border-top: 3px solid transparent;/*bordure haute des menus transparents à l'affichage*/
 
 }
@@ -146,7 +146,7 @@ i{
 /*boutton rechercher*/
 button{
 
-    border-radius: 0rem 0.8rem 0.8rem 0rem;/*bordure arrondies en haut a droite et bas droite*/
+    border-radius: 0px 12.8px 12.8px 0px;/*bordure arrondies en haut a droite et bas droite*/
     color: white;/*couleur du texte blanc sur le boutton*/
     background-color:#0065fc;/*couleur arrière-plan du boutton rechercher en bleu*/
     border: none;
@@ -266,15 +266,15 @@ button{
  .results-message .fas{
      
     color: #0065FC;
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
     border : 1px solid #d9d9d9;/*d9d9d9*/
     border-radius: 50%;/*cercle 50 pourcent*/
     display:flex;/*les 3 frangins */
     align-items: center;/*pour tout centrer*/
     justify-content: center;/*toujours ensemble*/
-    margin-bottom: 1rem;/*marge basse 16 px*/
-    margin-right: 0.5rem;/*marge droite 0.5*/
+    margin-bottom: 16px;
+    margin-right: 8px;
     background-color: white;
 
 }
@@ -307,7 +307,7 @@ button{
     
     border: 1px solid white;
     background-color: #f2f2f2;
-    border-radius: 1rem;
+    border-radius: 16px;
     
     
 }
@@ -363,7 +363,7 @@ button{
 .city-apartments-list div{
 
     
-    flex-basis: calc(33%-1rem);
+    flex-basis: calc(33%-16px);
     
 }
 
@@ -381,7 +381,7 @@ button{
     
     color: #0065FC;
     background-color: white;
-    padding-left: 0rem;
+    padding-left: 0px;
     font-size: 13px;
 
 }
@@ -390,8 +390,8 @@ button{
 
     color: lightgray;
     background-color: white;
-    padding-left: 0rem;
-    margin:0 0.1rem 0 0.1rem;
+    padding-left: 0px;
+    margin:0 1.6px 0 1.6px;
     font-size: 13px;
 
 }
@@ -401,13 +401,13 @@ button{
 .city-apartments-list {
 
     background-color: #f2f2f2; 
-    padding: 0.5rem;
+    padding: 8px;
 
 }
 
 .city-apartments-list img{
 
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     width: 245px;
     height: 120px;
     object-fit: cover;
@@ -467,7 +467,7 @@ button{
 .popular-flex i{
     
     padding-left: 155px;
-   font-size: 22px;
+    font-size: 22px;
 
 }
 
@@ -487,8 +487,8 @@ button{
 .popular article{
 
     background-color: white;
-    padding: 0.375rem;
-    border-radius: 1.25rem;
+    padding: 6px;
+    border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
@@ -516,6 +516,7 @@ button{
 }
 
 .popular-rest h3{
+
     margin:10px 0 0 0;
 
 }
@@ -535,7 +536,9 @@ button{
 }
 
 .popular-rest-stars-b i{
+
     padding: 46px 0 0 0;
+
 }
 
 
@@ -586,8 +589,8 @@ button{
 
 
     width:100%;
-    box-shadow: 0 0 1rem #0000002e;
-    border-radius: 1rem;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 16px;
 
 }
 
@@ -606,7 +609,7 @@ button{
 
     height: 87%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
 
 }
@@ -614,12 +617,14 @@ button{
 .second-a a{
 
     height: 100%;
+
 }
+
 .second-a{
+
     height: 250px;
     margin-bottom: 49px;
     
-
 }
 
 .second-b{
@@ -628,15 +633,18 @@ button{
 }
 
 second-b a{
+
     height: 100px;
     
 }
+
 /*partie 2 img config*/
+
 .second-a img{
 
     height: 77%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
     
 
@@ -646,35 +654,39 @@ second-b a{
 
     height: 71%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
     
 
 }
 
 /*config image partie 3*/
+
 .third img{
 
     height: 87%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
 
 }
 
 .fourth-a img{
+
     height: 70%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
+
 }
 
 .fourth-b img{
     
     height: 74%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
+
 }
 
 .fourth-a{
@@ -703,6 +715,7 @@ second-b a{
     opacity: 0.9; 
 
 }
+
 .first:hover, .second-a:hover, .second-b:hover, .third:hover, .fourth-a:hover, .fourth-b:hover{
 
     transform: scale(1.03);
@@ -718,6 +731,7 @@ second-b a{
 
 
 /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+
 footer{
 
     background-color: #F2F2F2;
@@ -729,10 +743,13 @@ footer{
 }
 
 .footer-a-propos{
+
     margin: 20px 0;
+
 }
 
 /*pour enelver les points généré par la balise ul*/
+
 ul {
     
     list-style-type : none;
@@ -746,5 +763,7 @@ li{
 }
 
 footer div{
+
     padding: 20px 240px 27px 0;
+    
 }                      

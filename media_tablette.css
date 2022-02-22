@@ -1,0 +1,29 @@
+/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
+
+@media(max-width: 992px){
+            
+    .apartments-list{
+                
+        flex-direction: column-reverse;
+                
+    }
+            
+        .popular-article{
+        
+            flex-direction: column;
+            gap: 30px;
+                
+        }
+
+            .popular-article .popular-rest-stars i{
+        
+                background-color: transparent;
+                padding-bottom: 30px;
+                padding: 0px 0 0 0;
+        
+            }
+
+
+}
+
+/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
