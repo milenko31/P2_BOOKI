@@ -408,14 +408,16 @@ button{
 .city-apartments-list img{
 
     border-radius: 16px 16px 0 0;
-    width: 245px;
-    height: 120px;
+    width: 100%;
+    height: 56%;
     object-fit: cover;
 
 }
 
 .city .city-apartments-list article{
 
+    height: 219px;
+    width: 100%;
     border: 1px solid white;
     padding : 4.8px;
     margin-bottom:auto;
@@ -433,9 +435,9 @@ button{
 
 /*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*/
 
-.afficher-plus {
+.afficher-plus{
 
-    padding: 0px 0 0px 40px;
+    padding: 40px 0 0px 50px;
     font-weight: bold;
 
 }
@@ -444,6 +446,7 @@ button{
 
     display: flex;
     align-items: center;
+    padding-bottom: 16px;
     
 }
 
@@ -471,47 +474,40 @@ button{
 
 }
 
-.popular-flex{
-
-    padding-bottom: 16px;
-
-}
-
 .popular-fix{
 
     display: flex;
-    align-items: stretch;
-    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 148px;
 
 }
 .popular article{
 
     background-color: white;
-    padding: 6px;
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    height: 156px;
     margin-bottom: 34px;
     
 }
 
-.popular-img img{
+.popular-img{
 
-    height: 145px;
-    width: 138px;
-    border-radius: 16px 0 0 16px;
+    height: 95%;
+    width: 40%;
+    border-radius: 20px 0 0 20px;
     object-fit: cover;
+    padding: 2px 6px;
    
 }
 
 .popular-rest{
 
-    display:flex;
-    flex-direction: column;
-    padding-left: 20px;
+    width: 45%;
 
 }
 
@@ -529,9 +525,9 @@ button{
 
 .popular-rest-stars i{
 
-    background-color: white;
-    margin-bottom: 10px;
-    padding: 65px 0 0 0;
+    background-color: transparent;
+    /* margin-bottom: 7%; */
+    padding: 18% 0 0 0;
 
 }
 
@@ -738,7 +734,7 @@ footer{
     width: 100%;
     display:flex;
     font-size: medium;
-   
+    
     
 }
 
@@ -764,6 +760,7 @@ li{
 
 footer div{
 
-    padding: 20px 240px 27px 0;
-    
-}                      
+
+    margin-right:20%;
+
+}

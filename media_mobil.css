@@ -5,6 +5,7 @@
 
         height: 57px;
         margin: auto;
+        padding-left: 15%;
 
     }
 
@@ -163,6 +164,7 @@
     footer{
                 
         flex-direction: column;
+        
                 
     }
             
