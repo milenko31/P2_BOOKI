@@ -128,6 +128,12 @@
                                     padding-left: 10px;
                                 }
 
+                                    .popular-rest-stars{
+
+                                        margin-top: 33px;
+
+                                    }
+
 }
         
 
@@ -146,7 +152,7 @@
 
         .main-marseille .activity-marseille div {
 
-            height: auto;
+            height: 45%;
 
         }
 
@@ -164,7 +170,7 @@
     footer{
                 
         flex-direction: column;
-        
+
                 
     }
             
