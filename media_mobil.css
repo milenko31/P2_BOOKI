@@ -1,184 +1,89 @@
 /*MEDIA LOGO BOOKI*/
-@media (max-width: 768px){
 
-    #logo{
-
+@media (max-width: 768px) {
+    #logo {
         height: 57px;
         margin: auto;
         padding-left: 15%;
-
     }
-
-}
-/*MEDIA LOGO BOOKI*/
-/*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*/
-@media (max-width: 768px){  
-    
-    .sub-nav{
-        
-        flex-basis: 100%;/* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
-        display:flex;
-        
-    }                                                              
-    
-    .sub-nav a{
-        
-        flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768px ou moins*/
-        text-align: center;/*aligner le texte et centrer*/
-        border-bottom: 3px solid #f2f2f2;/*bordure basse grise*/
-        
-    }                               
-    
+    .sub-nav {
+        flex-basis: 100%;
+        /* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
+        display: flex;
+    }
+    .sub-nav a {
+        flex-basis: 50%;
+        /*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768px ou moins*/
+        text-align: center;
+        /*aligner le texte et centrer*/
+        border-bottom: 3px solid #f2f2f2;
+        /*bordure basse grise*/
+    }
     /*menu 768px ou moins survolage borudre nav*/
-    .sub-nav a:hover{
-        
-        color: #0065fc;/*survolage afficher en bleu*/
-        border-top: 3px solid transparent;/*bordure haute transparente */
-        border-bottom: 3px solid #0065fc;/*bordure basse bleu */
-        
-    }   
-    
-    
-} 
-/*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*//*MEDIA SUB NAV 768px*/  
-
-/*media queries barre rechercher etc*/
-
-@media (max-width: 768px){
-    .search-form .Titre_recherche{
-
-        display: none;/*enlever le boutton rechercher quand on reduit l'écran*/
-        
+    .sub-nav a:hover {
+        color: #0065fc;
+        /*survolage afficher en bleu*/
+        border-top: 3px solid transparent;
+        /*bordure haute transparente */
+        border-bottom: 3px solid #0065fc;
+        /*bordure basse bleu */
     }
-    
+    .search-form .Titre_recherche {
+        display: none;
+        /*enlever le boutton rechercher quand on reduit l'écran*/
+    }
     /*icône loupe*/
-    .fas.fa-search{
-
-        display: inline;/*affiche la loupe aligné avec le reste*/
-        color: white;/* en blanc*/
-        background-color: #0065fc;/* avec fond bleu*/
+    .fas.fa-search {
+        display: inline;
+        /*affiche la loupe aligné avec le reste*/
+        color: white;
+        /* en blanc*/
+        background-color: #0065fc;
+        /* avec fond bleu*/
         padding: 0px 18px 0 18px;
-
     }
-}
-
-/*media queries barre rechercher etc*/
-        
-/* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*/
-        
-@media(max-width: 768px){
-            
-    .filter_itemTitle{
-        
+    .filter_itemTitle {
         width: 100%;
-                
     }
-}
-        
-/* MEDIA FILTER*//* MEDIA FILTER*//* MEDIA FILTER*/
-
-/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-        
-@media(max-width: 768px){
-            
-    .apartments-list{
-                
+    .apartments-list {
         flex-direction: column-reverse;
-                
     }
-        
-        .popular-article{
-        
-            gap: 30px;
-            flex-direction: column;
-        }
-                
-            .popular-article i{
-                    
-                background-color: transparent;
-                padding-bottom: 30px;
-                    
-            }
-
-                .popular-flex h2{
-
-                    flex: initial;
-                }
-
-                    .city-apartments-list{
-
-                        flex-direction: column;
-                        
-
-                    }
-
-                        .city-apartments-list img{
-
-                            width: 100%;
-
-                        }
-
-                            .afficher-plus{
-                                
-                                padding: 5px 0 0px 12px;
-                            }
-
-                                .city h2{
-
-                                    padding-left: 10px;
-                                }
-
-                                    .popular-rest-stars{
-
-                                        margin-top: 33px;
-
-                                    }
-
-}
-        
-
-           
-/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
-
-/*MEDIA ACTIVITES A MARSEILLE*/
-
-@media(max-width: 768px){
-
-    .activity-marseille{
-        
+    .popular article {
+        width: 100%;
+    }
+    .popular-article {
+        gap: 30px;
         flex-direction: column;
-
     }
-
-        .main-marseille .activity-marseille div {
-
-            height: 45%;
-
-        }
-
-
-
-
-}
-/*MEDIA ACTIVITES A MARSEILLE*/
-
-
-/*FOOTER*/
-        
-@media(max-width: 768px){
-            
-    footer{
-                
+    .popular-article i {
+        background-color: transparent;
+        padding-bottom: 30px;
+    }
+    .popular-flex h2 {
+        flex: initial;
+    }
+    .city-apartments-list {
         flex-direction: column;
-
-                
     }
-            
-            .footer-a{
-                
-                padding: 10px;
-
-        }
+    .city-apartments-list img {
+        width: 100%;
+    }
+    .afficher-plus {
+        padding: 5px 0 0px 12px;
+    }
+    .city h2 {
+        padding-left: 10px;
+    }
+    .activity-marseille {
+        flex-direction: column;
+    }
+    .main-marseille .activity-marseille div {
+        height: 45%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-a {
+        padding: 10px;
+    }
 }
-        
-/*FOOTER*/

@@ -1,32 +1,31 @@
-/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
+/*MEDIA MEDIA APARTMENTS*/
 
-@media(max-width: 992px){
-            
-    .apartments-list{
-                
+
+/*MEDIA MEDIA APARTMENTS*/
+
+@media(max-width: 1025px) and (min-width: 769px) {
+    .apartments-list {
         flex-direction: column-reverse;
-                
     }
-            
-        .popular-article{
-        
-            flex-direction: column;
-            gap: 30px;
-                
-        }
-
-            .popular-article .popular-rest-stars i{
-        
-                background-color: transparent;
-                padding-bottom: 30px;
-                padding: 0px 0 0 0;
-        
-            }
-
-
+    .popular-article {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        width: auto;
+        display: flex;
+    }
+    .popular-article .popular-rest-stars i {
+        background-color: transparent;
+        padding-bottom: 30px;
+        padding: 0px 0 0 0;
+    }
+    .popular article {
+        width: 70%;
+    }
 }
 
-/*MEDIA MEDIA APARTMENTS*//*MEDIA MEDIA APARTMENTS*/
+
+/*MEDIA MEDIA APARTMENTS*/
 
 
-@media(max)
+/*MEDIA MEDIA APARTMENTS*/

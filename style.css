@@ -1,237 +1,243 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 /*toujours mettre en haut*/
-/* j'importe ma selection de police de google font en suivant la fiche synthèse*/
-* {/* l'étoile permet de tout séléctionné on parle de WILDCARD*/
-    box-sizing: border-box;
 
-    
+
+/* j'importe ma selection de police de google font en suivant la fiche synthèse*/
+
+* {
+    /* l'étoile permet de tout séléctionné on parle de WILDCARD*/
+    box-sizing: border-box;
     /*box-sizing définit hauteur et largeur totale d'un élément*/
     /*border-box indique au navigateur de prendre en compte bordure et remplissage 
     dans la valeur définie pour la largeur et la hauteur*/
-    font-family :"Raleway","sans-serif";/*police Raleway pour toute la page ainsi qu'une font fallback en cas 
+    font-family: "Raleway", "sans-serif";
+    /*police Raleway pour toute la page ainsi qu'une font fallback en cas 
     ou cette police ne marche ou si il y a problème, sans-serif étant la police de dernier recours pour tout site web*/
 }
 
-body{
-
+body {
     margin: 0;
-
 }
 
-
-a{
-    
-    color:black;/*couleur noir pour les liens d'hébergements et d'activités*/
-    text-decoration:none;/*j'enlève le surlignage*/
-
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+a {
+    color: black;
+    /*couleur noir pour les liens d'hébergements et d'activités*/
+    text-decoration: none;
+    /*j'enlève le surlignage*/
+}
+
 
 /*# pour attribuer un id pour pouvoir modifier les propriétés de l'unique icône*/
 
 #logo {
-   
-     padding: 0 32px;
-     height: 57px;
-     margin: 15px auto 15px 15px;
-
+    padding: 0 32px;
+    height: 57px;
+    margin: 15px auto 15px 15px;
 }
 
-nav{
-   
-    display: flex;/*display définit le type d'affichage pour le rendu d'un élément / flex remplit l'espace disponible de son conteneur*/
-    align-items:center;/*aligne l'objet au sein de son conteneur / center pour le centre du conteneur*/
-    justify-content: flex-end;/*justifie entre et autour des éléments dans le conteneur / éléments flexibles groupés à la fin*/
-    flex-wrap: wrap;/*En fonction de la redimension de la page mes liens vont à ligne de manière liénaire au lieu de suivre le logo vers la gauche de la page*/
+nav {
+    display: flex;
+    /*display définit le type d'affichage pour le rendu d'un élément / flex remplit l'espace disponible de son conteneur*/
+    align-items: center;
+    /*aligne l'objet au sein de son conteneur / center pour le centre du conteneur*/
+    justify-content: flex-end;
+    /*justifie entre et autour des éléments dans le conteneur / éléments flexibles groupés à la fin*/
+    flex-wrap: wrap;
+    /*En fonction de la redimension de la page mes liens vont à ligne de manière liénaire au lieu de suivre le logo vers la gauche de la page*/
     padding-top: 4px;
 }
 
-nav a{
-
-    padding: 32px;/*padding de 32px partout pour les liens dans nav*/
-    border-top: 3px solid transparent;/*bordure haute des menus transparents à l'affichage*/
-
+nav a {
+    padding: 32px;
+    /*padding de 32px partout pour les liens dans nav*/
+    border-top: 3px solid transparent;
+    /*bordure haute des menus transparents à l'affichage*/
 }
-                                   
+
+
 /*hover pour survolage */
 
-nav a:hover{
-
-    border-top: 3px solid #0065fc;/*bordure haute devient bleu au survolage des menus en haut*/
-
+nav a:hover {
+    border-top: 3px solid #0065fc;
+    /*bordure haute devient bleu au survolage des menus en haut*/
 }
 
-.nav-button{
-
-    color:black;
-
+.nav-button {
+    color: black;
 }
 
-.nav-button:hover{
-
+.nav-button:hover {
     font-weight: bold;
-    color:#0065fc;
-
+    color: #0065fc;
 }
-               
- 
-.sub-nav a{
 
-    flex-basis: 50%;/*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768 px ou moins*/
-    text-align: center;/*aligner le texte et centrer*/
-   
+.sub-nav a {
+    flex-basis: 50%;
+    /*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768 px ou moins*/
+    text-align: center;
+    /*aligner le texte et centrer*/
 }
+
 
 /*FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR FIN DE NAVBAR*/
 
-.Titre_recherche{
-
+.Titre_recherche {
     padding: 16px 8px;
-
 }
 
-
-.Titre_recherche h1{
-
+.Titre_recherche h1 {
     margin: 0 0 6px 0;
 }
 
-.Titre_recherche p{
-
+.Titre_recherche p {
     margin: 0 0 16px 0;
-
 }
+
 
 /*variable i+imput+search*/
 
-.search-form{
-
-    border: 1px solid lightgrey flex;/*5135241683541354168352415*/
-    display: flex;/*pour adapter le flex i+imput+search*/
+.search-form {
+    border: 1px solid lightgrey flex;
+    /*5135241683541354168352415*/
+    display: flex;
+    /*pour adapter le flex i+imput+search*/
     height: 50px;
-   
-
 }
+
 
 /*barre de recherche imput*/
 
-.search-form .imput{
-
-    border: 1px solid #F2F2F2;/*bordure du imput en lightgrey*/
-    overflow: auto;/*adapte sa longueur en fonction de la taille d'écran pour ne pas dépasser*/
-
+.search-form .imput {
+    border: 1px solid #F2F2F2;
+    /*bordure du imput en lightgrey*/
+    overflow: auto;
+    /*adapte sa longueur en fonction de la taille d'écran pour ne pas dépasser*/
 }
+
 
 /*affichage du boutton quand on survole*/
 
-.search-form button:hover{
-
-    opacity: 1;/*bleu plus foncé quand on pose la souris dessus*/
-    transform: scale(1.03);/*grossit de 1.03 quand la souris est dessus*/
-    transition: transform 200ms;/* met 200 milli sec à faire tout le changement */
-
+.search-form button:hover {
+    opacity: 1;
+    /*bleu plus foncé quand on pose la souris dessus*/
+    transform: scale(1.03);
+    /*grossit de 1.03 quand la souris est dessus*/
+    transition: transform 200ms;
+    /* met 200 milli sec à faire tout le changement */
 }
+
 
 /*icône maps*/
 
-i{
-
+i {
     padding: 18px 19px 19px 19px;
-    background-color: #f2f2f2;/*arrière-plan couleur gris clair*/
+    background-color: #f2f2f2;
+    /*arrière-plan couleur gris clair*/
     border-radius: 12.8px 0 0 12.8px;
     border: none;
-  
 }
 
-/*boutton rechercher*/
-button{
 
-    border-radius: 0px 12.8px 12.8px 0px;/*bordure arrondies en haut a droite et bas droite*/
-    color: white;/*couleur du texte blanc sur le boutton*/
-    background-color:#0065fc;/*couleur arrière-plan du boutton rechercher en bleu*/
+/*boutton rechercher*/
+
+button {
+    border-radius: 0px 12.8px 12.8px 0px;
+    /*bordure arrondies en haut a droite et bas droite*/
+    color: white;
+    /*couleur du texte blanc sur le boutton*/
+    background-color: #0065fc;
+    /*couleur arrière-plan du boutton rechercher en bleu*/
     border: none;
     cursor: pointer;
     opacity: 0.9;
     font-weight: bold;
     font-size: medium;
-
 }
 
-.imput{
-
+.imput {
     padding-left: 25px;
     font-size: medium;
-
 }
+
 
 /*texte quand le champ de saisie est vide*/
-::placeholder{
 
-    color: rgb(59 59 59);/*couleur grise*/
-    font-weight: bold;/*gras*/
+::placeholder {
+    color: rgb(59 59 59);
+    /*couleur grise*/
+    font-weight: bold;
+    /*gras*/
     font-size: medium;
-
 }
+
 
 /*icône loupe*/
 
-.fas.fa-search{
-
-     display: none;/*pas afficher la loupe en taille pc*/
-
+.fas.fa-search {
+    display: none;
+    /*pas afficher la loupe en taille pc*/
 }
-
 
 
 /*FILTERS FILTERS FILTERS FILTERS FILTERS FILTERS*/
 
-.filter
-
-{
-    display: flex;/*aligné et non chacun à la ligne*/
-    margin-top: 32px;/* marge haute 32px pour ajuster*/
+.filter {
+    display: flex;
+    /*aligné et non chacun à la ligne*/
+    margin-top: 32px;
+    /* marge haute 32px pour ajuster*/
     flex-wrap: wrap;
     margin-bottom: 20px;
-  
 }
 
-.filter_itemTitle
-
-{
-    
-    margin:8px 31px 16px 8px ;/*marger les titres des filtres*/
-    display: flex;/* aligner FILTRES avec le reste*/
-    align-items: center;/*centrer*/
+.filter_itemTitle {
+    margin: 8px 31px 16px 8px;
+    /*marger les titres des filtres*/
+    display: flex;
+    /* aligner FILTRES avec le reste*/
+    align-items: center;
+    /*centrer*/
     flex-wrap: wrap;
 }
 
-.filter_item
-
-{
-
-    display: flex;/*aligner les span avec les icônes*/
-    align-items: center;/*centrer les span avec les icônes*/
-    margin-right: 32px;/* ajoute de marge droite entre chaque filtres*/
-    border: 2px solid #d3d3d3;/*bordure grise 2px solid*/
-    border-radius: 32px;/*arrondie*/
-    cursor: pointer;/*le pointer quand on arrive dessus*/
-    transition-duration: 0.1s;/*transition sur le filtre*/
-    font-weight: bold;/*gras*/
+.filter_item {
+    display: flex;
+    /*aligner les span avec les icônes*/
+    align-items: center;
+    /*centrer les span avec les icônes*/
+    margin-right: 32px;
+    /* ajoute de marge droite entre chaque filtres*/
+    border: 2px solid #d3d3d3;
+    /*bordure grise 2px solid*/
+    border-radius: 32px;
+    /*arrondie*/
+    cursor: pointer;
+    /*le pointer quand on arrive dessus*/
+    transition-duration: 0.1s;
+    /*transition sur le filtre*/
+    font-weight: bold;
+    /*gras*/
     margin-bottom: 16px;
 }
 
-.filter_item:hover
-{
+.filter_item:hover {
     border: 2px solid #DEEBFF;
-    color:black;/*noir sur le hover sur caractère*/
+    color: black;
+    /*noir sur le hover sur caractère*/
     opacity: 1;
-    transform: scale(1.015);/*EFFET*/
-    background-color: #DEEBFF;/*COULEUR arriere plan en hover*/
-
+    transform: scale(1.015);
+    /*EFFET*/
+    background-color: #DEEBFF;
+    /*COULEUR arriere plan en hover*/
 }
 
-.filter_itemsIcon
-{
+.filter_itemsIcon {
     color: #0065fc;
     background-color: #DEEBFF;
     border-radius: 100%;
@@ -242,258 +248,235 @@ button{
     justify-content: center;
     margin: -2px;
     opacity: 1;
-
 }
 
-.filter_itemTxt{
-
+.filter_itemTxt {
     margin: 0 16px;
-
 }
+
 
 /*FILTERS FILTERS FILTERS FILTERS FILTERS FILTERS*/
 
+
 /*RESULTS MESSAGE RESULTS MESSAGE RESULTS MESSAGE RESULTS MESSAGE */
 
-.results-message{
-    
+.results-message {
     display: flex;
-    align-items: center;/*alignement vertical*/
+    align-items: center;
+    /*alignement vertical*/
     margin-bottom: 12px;
-    
- }
+}
 
- .results-message .fas{
-     
+.results-message .fas {
     color: #0065FC;
     width: 32px;
     height: 32px;
-    border : 1px solid #d9d9d9;/*d9d9d9*/
-    border-radius: 50%;/*cercle 50 pourcent*/
-    display:flex;/*les 3 frangins */
-    align-items: center;/*pour tout centrer*/
-    justify-content: center;/*toujours ensemble*/
+    border: 1px solid #d9d9d9;
+    /*d9d9d9*/
+    border-radius: 50%;
+    /*cercle 50 pourcent*/
+    display: flex;
+    /*les 3 frangins */
+    align-items: center;
+    /*pour tout centrer*/
+    justify-content: center;
+    /*toujours ensemble*/
     margin-bottom: 16px;
     margin-right: 8px;
     background-color: white;
-
 }
+
 
 /*icone petit i margin*/
-.results-message i{
 
+.results-message i {
     padding: 15px;
-
 }
+
+
 /*RESULTS MESSAGE RESULTS MESSAGE RESULTS MESSAGE RESULTS MESSAGE */
+
 
 /*APARTMENTS-LIST APARTMENTS-LIST APARTMENTS-LIST */
 
-.apartments-list{
-
+.apartments-list {
     display: flex;
     gap: 32px;
-
 }
 
-.city-apartments-list a{
-
+.city-apartments-list a {
     cursor: pointer;
-    opacity: 0.9; 
-
+    opacity: 0.9;
 }
 
-.apartments-list > div{
-    
+.apartments-list>div {
     border: 1px solid white;
     background-color: #f2f2f2;
     border-radius: 16px;
-    
-    
 }
 
-.apartments-list .city{
-
-    flex-basis: 66%;/*2 fractions de l'écran*/
+.apartments-list .city {
+    flex-basis: 66%;
+    /*2 fractions de l'écran*/
     padding: 25px;
-
 }
 
-.apartments-list .city span{
-    
+.apartments-list .city span {
     font-weight: bold;
-    
 }
-.city-apartments-list a:hover{
-    
+
+.city-apartments-list a:hover {
     transform: scale(1.03);
     transition: transform 200ms;
-    transition-duration: 0.1s;   
-    opacity: 1; 
+    transition-duration: 0.1s;
+    opacity: 1;
     cursor: pointer;
-    
 }
 
-.city-apartments-list h3{
+.city-apartments-list h3 {
     margin: 0;
     padding-left: 12px;
 }
 
-.apartments-list .popular{
-
-    flex-basis: 33%;/*1 fraction de l'écran*/
+.apartments-list .popular {
+    flex-basis: 33%;
+    /*1 fraction de l'écran*/
     padding: 25px 25px 10px 25px
 }
 
-.city-apartments-list{
-
-    display: flex;/*flex sur la liste city*/
+.city-apartments-list {
+    display: flex;
+    /*flex sur la liste city*/
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    
-
 }
 
-.city h2{
+.city h2 {
     padding-left: 40px;
-    
 }
 
-.city-apartments-list div{
-
-    
+.city-apartments-list div {
     flex-basis: calc(33%-16px);
-    
 }
 
-
-.city-apartments-list i{
-
+.city-apartments-list i {
     padding-right: 0.1px;
     padding-top: 0px;
     padding-bottom: 0px;
-
 }
 
+
 /*ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
-.blue{
-    
+
+.blue {
     color: #0065FC;
     background-color: white;
     padding-left: 0px;
     font-size: 13px;
-
 }
 
-.grey{
-
+.grey {
     color: lightgray;
     background-color: white;
     padding-left: 0px;
-    margin:0 1.6px 0 1.6px;
+    margin: 0 1.6px 0 1.6px;
     font-size: 13px;
-
 }
+
 
 /* FINNNNN ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES ETOILES */
 
 .city-apartments-list {
-
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
     padding: 8px;
-
 }
 
-.city-apartments-list img{
-
+.city-apartments-list img {
     border-radius: 16px 16px 0 0;
     width: 100%;
     height: 56%;
     object-fit: cover;
-
 }
 
-.city .city-apartments-list article{
-
+.city .city-apartments-list article {
     height: 241px;
     width: 240px;
     border: 1px solid white;
-    padding : 4.8px;
-    margin-bottom:auto;
+    padding: 4.8px;
+    margin-bottom: auto;
     border-radius: 16px;
     background-color: white;
     box-shadow: 0 0 16px #0000002e;
-    
 }
 
-.city-apartments-list p{
-    
+.city-apartments-list p {
     padding: 0 0 0 11px;
-    
 }
 
-.city-apartments-list i{
-
+.city-apartments-list i {
     padding: 0 0 0 0;
 }
-/*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*//*LES PLUS POPULAIRES*/
 
-.afficher-plus{
 
+/*LES PLUS POPULAIRES*/
+
+
+/*LES PLUS POPULAIRES*/
+
+
+/*LES PLUS POPULAIRES*/
+
+
+/*LES PLUS POPULAIRES*/
+
+
+/*LES PLUS POPULAIRES*/
+
+
+/*LES PLUS POPULAIRES*/
+
+.afficher-plus {
     padding: 40px 0 0px 50px;
     font-weight: bold;
-
 }
 
-.popular-flex{
-
+.popular-flex {
     display: flex;
     align-items: center;
     padding-bottom: 16px;
-    
 }
 
-.popular-flex h2{
-
+.popular-flex h2 {
     flex-basis: 100%;
-
 }
 
-.popular a{
-
+.popular a {
     cursor: pointer;
-    opacity: 0.9; 
-
+    opacity: 0.9;
 }
 
-.popular article:hover{
-
+.popular article:hover {
     transform: scale(1.03);
     transition: transform 200ms;
-    transition-duration: 0.1s;   
-    opacity: 1; 
+    transition-duration: 0.1s;
+    opacity: 1;
     cursor: pointer;
-
 }
 
-.popular-flex i{
-    
+.popular-flex i {
     font-size: 22px;
-    
 }
 
-.popular-fix{
-
+.popular-fix {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     height: 148px;
-
 }
-.popular article{
 
+.popular article {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
@@ -501,274 +484,221 @@ button{
     cursor: pointer;
     box-sizing: border-box;
     margin-bottom: 34px;
-    
 }
 
-.popular-img{
-
+.popular-img {
     height: 95%;
     width: 40%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
     padding: 2px 6px;
-   
 }
 
-.popular-rest{
-
+.popular-rest {
     width: 45%;
-
 }
 
-.popular-rest h3{
-
-    margin:10px 0 0 0;
-
+.popular-rest h3 {
+    margin: 10px 0 0 0;
 }
 
-.popular-rest p{
-
+.popular-rest p {
     margin-bottom: 0;
     margin-top: 3px;
 }
 
-.popular-rest-stars i{
-
+.popular-rest-stars i {
     background-color: transparent;
     /* margin-bottom: 7%; */
     padding: 18% 0 0 0;
-
 }
 
-.popular-rest-stars-b i{
-
+.popular-rest-stars-b i {
     padding: 46px 0 0 0;
-
 }
 
 
-/*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/  
+/*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/
 
-.main-marseille{
-
+.main-marseille {
     height: 580px;
     max-height: 580px;
     margin-top: 50px;
-
 }
 
 
 /*H2 activités à Marseille*/
-.main-marseille h2{
 
+.main-marseille h2 {
     margin-left: 16px;
-
 }
 
 
 /*H2 activités à Marseille*/
+
 
 /*Labels sur groupe d'image*/
-.activity-marseille h4{
 
+.activity-marseille h4 {
     font-weight: bold;
     font-size: large;
-    margin:0%;
+    margin: 0%;
     padding: 12px 0 15px 25px;
-
 }
+
+
 /*Labels sur groupe d'image*/
 
-.main-marseille .activity-marseille{
-
+.main-marseille .activity-marseille {
     height: 480px;
     max-height: 480px;
     gap: 50px;
-    background-color: white; 
-    display: flex;/*pour que les images s'alignent correct*/
-
+    background-color: white;
+    display: flex;
+    /*pour que les images s'alignent correct*/
 }
 
-
-.main-marseille .activity-marseille div{
-
-
-    width:100%;
+.main-marseille .activity-marseille div {
+    width: 100%;
     box-shadow: 0 0 16px #0000002e;
     border-radius: 16px;
-
 }
+
 
 /*dimension des sections*/
-.activity-marseille section{
 
+.activity-marseille section {
     height: 480px;
     max-height: 480px;
-    width:100%;
-    
-
+    width: 100%;
 }
 
-/*config image partie 1*/
-.first img{
 
+/*config image partie 1*/
+
+.first img {
     height: 87%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-
 }
 
-.second-a a{
-
+.second-a a {
     height: 100%;
-
 }
 
-.second-a{
-
+.second-a {
     height: 250px;
     margin-bottom: 49px;
-    
 }
 
-.second-b{
-   
+.second-b {
     height: 180px;
 }
 
-second-b a{
-
+second-b a {
     height: 100px;
-    
 }
+
 
 /*partie 2 img config*/
 
-.second-a img{
-
+.second-a img {
     height: 77%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-    
-
 }
 
-.second-b img{
-
+.second-b img {
     height: 71%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-    
-
 }
+
 
 /*config image partie 3*/
 
-.third img{
-
+.third img {
     height: 87%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-
 }
 
-.fourth-a img{
-
+.fourth-a img {
     height: 70%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-
 }
 
-.fourth-b img{
-    
+.fourth-b img {
     height: 74%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
-
 }
 
-.fourth-a{
-
+.fourth-a {
     height: 210px;
     margin-bottom: 47px;
-
 }
 
-.fourth-a a{
-
+.fourth-a a {
     height: 100%;
-    
-
 }
 
-.fourth-b{
-
+.fourth-b {
     height: 220px;
-
 }
 
-.main-marseille a{
-
+.main-marseille a {
     cursor: pointer;
-    opacity: 0.9; 
-
+    opacity: 0.9;
 }
 
-.first:hover, .second-a:hover, .second-b:hover, .third:hover, .fourth-a:hover, .fourth-b:hover{
-
+.first:hover,
+.second-a:hover,
+.second-b:hover,
+.third:hover,
+.fourth-a:hover,
+.fourth-b:hover {
     transform: scale(1.03);
     transition: transform 200ms;
-    transition-duration: 0.1s;   
-    opacity: 1; 
+    transition-duration: 0.1s;
+    opacity: 1;
     cursor: pointer;
-
 }
-
-
-
 
 
 /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
 
-footer{
-
+footer {
     background-color: #F2F2F2;
-    width: 100%;
-    display:flex;
-    font-size: medium;
-    
+    display: flex;
+    margin: 60px auto auto auto;
+    padding-left: 12.3%;
+    padding-top: 45px;
+    font-size: 18px;
 }
 
-.footer-a-propos{
-
+.footer-a-propos {
     margin: 20px 0;
-
 }
+
 
 /*pour enelver les points généré par la balise ul*/
 
 ul {
-    
-    list-style-type : none;
-    
+    list-style-type: none;
 }
 
-li{
-    
+li {
     margin-bottom: 14px;
-    
 }
 
-footer div{
-
-
-    margin-right:20%;
-
+footer div {
+    width: 30%;
 }
