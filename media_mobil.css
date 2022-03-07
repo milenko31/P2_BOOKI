@@ -40,7 +40,7 @@
         /* en blanc*/
         background-color: #0065fc;
         /* avec fond bleu*/
-        padding: 0px 18px 0 18px;
+        padding: 0px 12px 0 12px;
     }
     .filter_itemTitle {
         width: 100%;
@@ -59,13 +59,20 @@
         background-color: transparent;
         padding-bottom: 30px;
     }
-    .popular-flex h2 {
-        flex: initial;
-    }
     .city-apartments-list {
         flex-direction: column;
+        background-color: transparent;
+    }
+    .apartments-list>div {
+        background-color: transparent;
+    }
+    .apartments-list .popular {
+        background-color: #f2f2f2;
     }
     .city-apartments-list img {
+        width: 100%;
+    }
+    .city .city-apartments-list article {
         width: 100%;
     }
     .afficher-plus {
@@ -78,12 +85,19 @@
         flex-direction: column;
     }
     .main-marseille .activity-marseille div {
-        height: 45%;
+        height: 210px;
+    }
+    .main-marseille .activity-marseille img {
+        height: 75%;
     }
     footer {
         flex-direction: column;
+        padding-left: 0%;
     }
     .footer-a {
         padding: 10px;
+    }
+    footer div {
+        width: unset;
     }
 }

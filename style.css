@@ -36,7 +36,6 @@ a {
 /*# pour attribuer un id pour pouvoir modifier les propriétés de l'unique icône*/
 
 #logo {
-    padding: 0 32px;
     height: 57px;
     margin: 15px auto 15px 15px;
 }
@@ -50,13 +49,12 @@ nav {
     /*justifie entre et autour des éléments dans le conteneur / éléments flexibles groupés à la fin*/
     flex-wrap: wrap;
     /*En fonction de la redimension de la page mes liens vont à ligne de manière liénaire au lieu de suivre le logo vers la gauche de la page*/
-    padding-top: 4px;
 }
 
 nav a {
     padding: 32px;
     /*padding de 32px partout pour les liens dans nav*/
-    border-top: 3px solid transparent;
+    border-top: 4px solid transparent;
     /*bordure haute des menus transparents à l'affichage*/
 }
 
@@ -64,7 +62,7 @@ nav a {
 /*hover pour survolage */
 
 nav a:hover {
-    border-top: 3px solid #0065fc;
+    border-top: 4px solid #0065fc;
     /*bordure haute devient bleu au survolage des menus en haut*/
 }
 
@@ -147,7 +145,7 @@ i {
 /*boutton rechercher*/
 
 button {
-    border-radius: 0px 12.8px 12.8px 0px;
+    border-radius: 12.8px;
     /*bordure arrondies en haut a droite et bas droite*/
     color: white;
     /*couleur du texte blanc sur le boutton*/
@@ -252,6 +250,7 @@ button {
 
 .filter_itemTxt {
     margin: 0 16px;
+    font-size: 17px;
 }
 
 
@@ -421,21 +420,6 @@ button {
 
 /*LES PLUS POPULAIRES*/
 
-
-/*LES PLUS POPULAIRES*/
-
-
-/*LES PLUS POPULAIRES*/
-
-
-/*LES PLUS POPULAIRES*/
-
-
-/*LES PLUS POPULAIRES*/
-
-
-/*LES PLUS POPULAIRES*/
-
 .afficher-plus {
     padding: 40px 0 0px 50px;
     font-weight: bold;
@@ -473,7 +457,7 @@ button {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    height: 148px;
+    height: 175px;
 }
 
 .popular article {
@@ -521,8 +505,6 @@ button {
 /*    ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE ACTIVITES A MARSEILLE*/
 
 .main-marseille {
-    height: 580px;
-    max-height: 580px;
     margin-top: 50px;
 }
 
@@ -543,15 +525,13 @@ button {
     font-weight: bold;
     font-size: large;
     margin: 0%;
-    padding: 12px 0 15px 25px;
+    padding: 20px 0 15px 19px;
 }
 
 
 /*Labels sur groupe d'image*/
 
 .main-marseille .activity-marseille {
-    height: 480px;
-    max-height: 480px;
     gap: 50px;
     background-color: white;
     display: flex;
@@ -568,8 +548,6 @@ button {
 /*dimension des sections*/
 
 .activity-marseille section {
-    height: 480px;
-    max-height: 480px;
     width: 100%;
 }
 
@@ -604,7 +582,7 @@ second-b a {
 /*partie 2 img config*/
 
 .second-a img {
-    height: 77%;
+    height: 74%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
@@ -621,7 +599,7 @@ second-b a {
 /*config image partie 3*/
 
 .third img {
-    height: 87%;
+    height: 84%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
@@ -635,7 +613,7 @@ second-b a {
 }
 
 .fourth-b img {
-    height: 74%;
+    height: 70%;
     width: 100%;
     border-radius: 16px 16px 0 0;
     object-fit: cover;
