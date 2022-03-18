@@ -22,10 +22,22 @@
     .popular article {
         width: 70%;
     }
+    .activity-marseille {
+        flex-direction: column;
+    }
+    .activity-marseille div {
+        height: 210px;
+    }
+    .activity-marseille h4 {
+        padding: 9px 0px 0px 19px;
+    }
+    .first img {
+        height: 75%;
+    }
+    .third img {
+        height: 75%;
+    }
 }
-
-
-/*MEDIA MEDIA APARTMENTS*/
 
 
 /*MEDIA MEDIA APARTMENTS*/

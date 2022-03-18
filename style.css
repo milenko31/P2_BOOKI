@@ -101,8 +101,6 @@ nav a:hover {
 /*variable i+imput+search*/
 
 .search-form {
-    border: 1px solid lightgrey flex;
-    /*5135241683541354168352415*/
     display: flex;
     /*pour adapter le flex i+imput+search*/
     height: 50px;
@@ -145,7 +143,7 @@ i {
 /*boutton rechercher*/
 
 button {
-    border-radius: 12.8px;
+    border-radius: 0 12.8px 12.8px 0;
     /*bordure arrondies en haut a droite et bas droite*/
     color: white;
     /*couleur du texte blanc sur le boutton*/
@@ -356,7 +354,7 @@ button {
 }
 
 .city-apartments-list div {
-    flex-basis: calc(33%-16px);
+    flex-basis: 33%;
 }
 
 .city-apartments-list i {
@@ -489,6 +487,11 @@ button {
 .popular-rest p {
     margin-bottom: 0;
     margin-top: 3px;
+}
+
+.popular-rest h4 {
+    margin: 0 0 0 0;
+    font-size: large;
 }
 
 .popular-rest-stars i {
@@ -679,4 +682,10 @@ li {
 
 footer div {
     width: 30%;
+}
+
+@media(max-width: 1200px) and (min-width: 1025px) {
+    .main-marseille .activity-marseille {
+        gap: 25px;
+    }
 }
