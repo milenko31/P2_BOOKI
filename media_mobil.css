@@ -1,124 +1,131 @@
-/*MEDIA LOGO BOOKI*/
-
-@media (max-width: 768px) {
-    #logo {
-        height: 57px;
-        margin: auto;
-        padding-left: 15%;
-    }
-    .Titre_recherche h1 {
-        font-size: 14px;
-    }
-    .sub-nav {
-        flex-basis: 100%;
-        /* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
-        display: flex;
-    }
-    .sub-nav a {
-        flex-basis: 50%;
-        /*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768px ou moins*/
-        text-align: center;
-        /*aligner le texte et centrer*/
-        border-bottom: 3px solid #f2f2f2;
-        /*bordure basse grise*/
-    }
-    /*menu 768px ou moins survolage borudre nav*/
-    .sub-nav a:hover {
-        color: #0065fc;
-        /*survolage afficher en bleu*/
-        border-top: 3px solid transparent;
-        /*bordure haute transparente */
-        border-bottom: 3px solid #0065fc;
-        /*bordure basse bleu */
-    }
-    .search-form .Titre_recherche {
-        display: none;
-        /*enlever le boutton rechercher quand on reduit l'écran*/
-    }
-    /*icône loupe*/
-    .fas.fa-search {
-        display: inline;
-        /*affiche la loupe aligné avec le reste*/
-        color: white;
-        /* en blanc*/
-        background-color: #0065fc;
-        /* avec fond bleu*/
-        padding: 0px 12px 0 12px;
-    }
-    .filter_itemTitle {
-        width: 100%;
-    }
-    .apartments-list {
-        flex-direction: column-reverse;
-    }
-    .popular article {
-        width: 100%;
-    }
-    .popular-article {
-        gap: 30px;
-        flex-direction: column;
-    }
-    .popular-article i {
-        background-color: transparent;
-        padding-bottom: 30px;
-    }
-    .city-apartments-list {
-        flex-direction: column;
-        background-color: transparent;
-    }
-    .apartments-list>div {
-        background-color: transparent;
-    }
-    .apartments-list .popular {
-        background-color: #f2f2f2;
-    }
-    .city-apartments-list img {
-        width: 100%;
-    }
-    .city .city-apartments-list article {
-        width: 100%;
-    }
-    .afficher-plus {
-        padding: 5px 0 0px 12px;
-    }
-    .city h2 {
-        padding-left: 10px;
-    }
-    .activity-marseille {
-        flex-direction: column;
-    }
-    .main-marseille .activity-marseille div {
-        height: 210px;
-    }
-    .main-marseille .activity-marseille img {
-        height: 75%;
-    }
-    footer {
-        flex-direction: column;
-        padding-left: 0%;
-    }
-    .footer-a {
-        padding: 10px;
-    }
-    footer div {
-        width: unset;
-    }
-    .search-form i {
-        margin-left: 10%;
-        margin: 0px 0 0 10%;
-    }
-    .search-form .imput {
-        flex-basis: 100%;
-    }
-    .search-form button {
-        margin: 0px 15% 0 0;
-    }
-    /* body {
-        font-size: 80%;
-    }
-    h1,
-    h2,
-    h3,
-    h4 {
-        font-size: 50%;*/
-}
+                            /*MEDIA LOGO BOOKI*/
+                            
+                            @media (max-width: 768px) {
+                                #logo {
+                                    height: 57px;
+                                    margin: auto;
+                                    padding-left: 15%;
+                                }
+                                .Titre_recherche h1 {
+                                    font-size: 27px;
+                                }
+                                .sub-nav {
+                                    flex-basis: 100%;
+                                    /* 100% de flexibilité sur la taille des menus en taille 768px ou moins*/
+                                    display: flex;
+                                }
+                                .sub-nav a {
+                                    flex-basis: 50%;
+                                    /*flexibilité 50% pour les deux menus remplissent la moitié d'un écran 768px ou moins*/
+                                    text-align: center;
+                                    /*aligner le texte et centrer*/
+                                    border-bottom: 3px solid #f2f2f2;
+                                    /*bordure basse grise*/
+                                }
+                                /*menu 768px ou moins survolage borudre nav*/
+                                .sub-nav a:hover {
+                                    color: #0065fc;
+                                    /*survolage afficher en bleu*/
+                                    border-top: 3px solid transparent;
+                                    /*bordure haute transparente */
+                                    border-bottom: 3px solid #0065fc;
+                                    /*bordure basse bleu */
+                                }
+                                .search-form .Titre_recherche {
+                                    display: none;
+                                    /*enlever le boutton rechercher quand on reduit l'écran*/
+                                }
+                                /*icône loupe*/
+                                .fas.fa-search {
+                                    display: inline;
+                                    /*affiche la loupe aligné avec le reste*/
+                                    color: white;
+                                    /* en blanc*/
+                                    background-color: #0065fc;
+                                    /* avec fond bleu*/
+                                    padding: 0px 12px 0 12px;
+                                }
+                                .filter_itemTitle {
+                                    width: 100%;
+                                }
+                                .apartments-list {
+                                    flex-direction: column-reverse;
+                                }
+                                .popular article {
+                                    width: 100%;
+                                }
+                                .popular-article {
+                                    gap: 30px;
+                                    flex-direction: column;
+                                }
+                                .popular-article i {
+                                    background-color: transparent;
+                                    padding-bottom: 30px;
+                                }
+                                .city-apartments-list {
+                                    flex-direction: column;
+                                    background-color: transparent;
+                                }
+                                .apartments-list>div {
+                                    background-color: transparent;
+                                }
+                                .apartments-list .popular {
+                                    background-color: #f2f2f2;
+                                }
+                                .city-apartments-list img {
+                                    width: 100%;
+                                }
+                                .city .city-apartments-list article {
+                                    width: 100%;
+                                }
+                                .afficher-plus {
+                                    padding: 5px 0 0px 12px;
+                                }
+                                .city h2 {
+                                    padding-left: 10px;
+                                }
+                                .activity-marseille {
+                                    flex-direction: column;
+                                }
+                                .main-marseille .activity-marseille div {
+                                    height: 210px;
+                                }
+                                .main-marseille .activity-marseille img {
+                                    height: 75%;
+                                }
+                                footer {
+                                    flex-direction: column;
+                                    padding-left: 0%;
+                                }
+                                .footer-a {
+                                    padding: 10px;
+                                }
+                                footer div {
+                                    width: unset;
+                                }
+                                .search-form i {
+                                    margin-left: 10%;
+                                    margin: 0px 0 0 7%;
+                                }
+                                .search-form .imput {
+                                    flex-basis: 100%;
+                                }
+                                .search-form button {
+                                    margin: 0px 8% 0 0;
+                                }
+                                .popular article {
+                                    margin-bottom: 14px;
+                                }
+                                .popular-rest h3 {
+                                    margin: 25px 0 0 0;
+                                }
+                                .popular-rest-stars i {
+                                    background-color: transparent;
+                                    margin-bottom: 7%;
+                                    padding: 41% 0 0 0;
+                                }
+                                .afficher-plus {
+                                    padding: 5px 0 0px 12px;
+                                    font-size: 20px;
+                                }
+                            }
